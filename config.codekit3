@@ -709,6 +709,16 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/ArrowDetails.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/ArrowDetails.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/BarnCardDesktop.png" : {
       "ft" : 32768,
       "iS" : 74794,
@@ -1415,6 +1425,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/content\/card.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/card.html",
+      "oF" : 0
     },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
