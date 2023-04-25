@@ -370,6 +370,10 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: bisque;
+}
+
 /* =============
     Footer
 ============= */
