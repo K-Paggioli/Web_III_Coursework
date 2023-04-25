@@ -327,6 +327,15 @@ template {
 /* =============
     Base
 ============= */
+.header-footer-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header-footer .";
+}
+.header-footer-grid > div {
+  grid-area: header-footer;
+}
+
 .large-images {
   width: 100%;
 }
@@ -361,15 +370,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-}
-header > div {
-  grid-area: header;
-}
-
 /* =============
     Footer
 ============= */
@@ -382,6 +382,32 @@ header > div {
 /* =============
     Card 
 ============= */
+.carda {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". about .";
+}
+.carda > div {
+  grid-area: carda;
+}
+
 /* =============
     Card 2
 ============= */
+#news {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". news .";
+}
+#news > div {
+  grid-area: news;
+}
+
+#newscards {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". news .";
+}
+#newscards > div {
+  grid-area: news;
+}

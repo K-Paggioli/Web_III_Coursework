@@ -1,20 +1,37 @@
 /* =============
     Card 
 ============= */
-#carda{
+.carda{
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". about .";
 
+>div{ 
+    grid-area: carda;
+}
 }
 
-#cardb{
 
-}
 /* =============
     Card 2
 ============= */
 #news{
-
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". news .";
+    
+    >div{ 
+        grid-area: news;
+    }
 }
 
 #newscards{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". news .";
     
+    >div{ 
+        grid-area: news;
+    }
+
 }
