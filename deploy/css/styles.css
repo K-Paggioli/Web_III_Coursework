@@ -390,13 +390,15 @@ textarea {
 /* =============
     Card 
 ============= */
-.carda {
+#carda aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". about .";
 }
-.carda > div {
+#carda aside > div {
   grid-area: carda;
+  display: grid;
+  grid-template-columns: 70% auto;
 }
 
 /* =============
