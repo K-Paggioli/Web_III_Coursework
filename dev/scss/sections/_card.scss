@@ -1,7 +1,7 @@
 /* =============
     Card 
 ============= */
-.carda{
+#carda{
     aside{
         display: grid;
         gap: 16px;
@@ -12,6 +12,7 @@
             grid-area: carda;
             display: grid;
             grid-template-columns: 70% auto;
+
         }
     }
 
@@ -38,6 +39,45 @@
     
     >div{ 
         grid-area: news;
+        display: grid;
+        gap: 16px; 
+
+        ul{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 16px;
+
+            @include md{
+                grid-template-columns: 50% 50%;
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                "p1 p1 p2 p2 p3 p3"
+                ". p4 p4 p5 p5 .";
+            }
+                li{
+                list-style: none;
+                background-color:lightgreen;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            #p1{
+                grid-area: p1;
+            }
+            #p2{
+                grid-area: p2;
+            }#p3{
+                grid-area: p3;
+            }#p4{
+                grid-area: p4;
+            }#p5{
+                grid-area: p5;
+            }
+        }
     }
 
 }

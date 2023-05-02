@@ -396,7 +396,7 @@ textarea {
 @media (min-width: 768px) {
   #osprey > div {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
@@ -418,7 +418,7 @@ textarea {
 @media (min-width: 768px) {
   #osprey2 > div {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
@@ -434,13 +434,13 @@ textarea {
 /* =============
     Card 
 ============= */
-.carda aside {
+#carda aside {
   display: grid;
   gap: 16px;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". carda .";
 }
-.carda aside > div {
+#carda aside > div {
   grid-area: carda;
   display: grid;
   grid-template-columns: 70% auto;
@@ -465,4 +465,44 @@ textarea {
 }
 #newscards > div {
   grid-area: news;
+  display: grid;
+  gap: 16px;
+}
+#newscards > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #newscards > div ul {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 1024px) {
+  #newscards > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "p1 p1 p2 p2 p3 p3" ". p4 p4 p5 p5 .";
+  }
+}
+#newscards > div ul li {
+  list-style: none;
+  background-color: lightgreen;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+#newscards > div ul #p1 {
+  grid-area: p1;
+}
+#newscards > div ul #p2 {
+  grid-area: p2;
+}
+#newscards > div ul #p3 {
+  grid-area: p3;
+}
+#newscards > div ul #p4 {
+  grid-area: p4;
+}
+#newscards > div ul #p5 {
+  grid-area: p5;
 }

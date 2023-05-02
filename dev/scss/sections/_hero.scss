@@ -15,7 +15,7 @@
         grid-area: osprey;
         @include md{
             display: grid;
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 40% auto;
         }
         @include lg{
             display: grid;
@@ -33,7 +33,7 @@
         grid-area: location;
         @include md{
             display: grid;
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 40% auto;
         }
         @include lg{
             display: grid;
