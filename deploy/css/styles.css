@@ -384,6 +384,26 @@ textarea {
 /* =============
     Hero
 ============= */
+#osprey {
+  background-color: darkorange;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". osprey .";
+}
+#osprey > div {
+  grid-area: osprey;
+}
+
+#osprey2 {
+  background-color: goldenrod;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". location .";
+}
+#osprey2 > div {
+  grid-area: location;
+}
+
 /* =============
     Hero2
 ============= */
