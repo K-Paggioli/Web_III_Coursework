@@ -393,6 +393,12 @@ textarea {
 #osprey > div {
   grid-area: osprey;
 }
+@media (min-width: 768px) {
+  #osprey > div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
 
 #osprey2 {
   background-color: goldenrod;
@@ -402,6 +408,12 @@ textarea {
 }
 #osprey2 > div {
   grid-area: location;
+}
+@media (min-width: 768px) {
+  #osprey2 > div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
 }
 
 /* =============

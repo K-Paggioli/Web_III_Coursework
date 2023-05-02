@@ -13,8 +13,11 @@
 
     >div{
         grid-area: osprey;
+        @include md{
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
     }
-
 }
 
 #osprey2{
@@ -24,6 +27,10 @@
 
     >div{
         grid-area: location;
+        @include md{
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
     }
 
 }       
