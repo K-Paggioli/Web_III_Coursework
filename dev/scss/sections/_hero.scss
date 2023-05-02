@@ -17,6 +17,10 @@
             display: grid;
             grid-template-columns: 40% 60%;
         }
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
     }
 }
 
@@ -30,6 +34,10 @@
         @include md{
             display: grid;
             grid-template-columns: 40% 60%;
+        }
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% 50%;
         }
     }
 

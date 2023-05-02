@@ -4,6 +4,7 @@
 .carda{
     aside{
         display: grid;
+        gap: 16px;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". carda .";
         

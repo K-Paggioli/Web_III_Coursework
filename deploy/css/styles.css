@@ -399,6 +399,12 @@ textarea {
     grid-template-columns: 40% 60%;
   }
 }
+@media (min-width: 1024px) {
+  #osprey > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
 
 #osprey2 {
   background-color: goldenrod;
@@ -415,6 +421,12 @@ textarea {
     grid-template-columns: 40% 60%;
   }
 }
+@media (min-width: 1024px) {
+  #osprey2 > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
 
 /* =============
     Hero2
@@ -424,6 +436,7 @@ textarea {
 ============= */
 .carda aside {
   display: grid;
+  gap: 16px;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". carda .";
 }
