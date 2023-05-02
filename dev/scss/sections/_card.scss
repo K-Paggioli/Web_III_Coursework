@@ -7,6 +7,28 @@
         gap: 16px;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". carda .";
+
+        @include md{
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-areas: "c1 c1 c2 c2";
+        }
+
+        @include xl{
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-areas: "c1 c1 c2 c2";
+        }
+
+        @include xxl{
+            grid-template-columns: auto 1440px auto;
+        }
+
+        #c1{
+            grid-area: c1;
+        }
+        
+        #c2{
+            grid-area: c2;
+        }
         
         >div{ 
             grid-area: carda;
@@ -64,6 +86,10 @@
                 padding-top: 16px;
                 padding-bottom: 16px;
             }
+
+            @include xxl{
+            grid-template-columns: auto 1440px auto;
+        }
 
             #p1{
                 @include xl{

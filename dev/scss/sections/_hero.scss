@@ -21,6 +21,9 @@
             display: grid;
             grid-template-columns: 50% 50%;
         }
+        @include xxl{
+            grid-template-columns: auto 1440px auto;
+        }
     }
 }
 
@@ -38,6 +41,9 @@
         @include xl{
             display: grid;
             grid-template-columns: 50% 50%;
+        }
+        @include xxl{
+            grid-template-columns: auto 1440px auto;
         }
     }
 

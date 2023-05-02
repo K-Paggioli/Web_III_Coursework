@@ -2,5 +2,8 @@
     Footer
 ============= */
 footer{
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
 
 }

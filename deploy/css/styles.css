@@ -378,9 +378,21 @@ textarea {
 /* =============
     Header
 ============= */
+@media (min-width: 1140px) {
+  header {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+
 /* =============
     Footer
 ============= */
+@media (min-width: 1140px) {
+  footer {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+
 /* =============
     Hero
 ============= */
@@ -405,6 +417,11 @@ textarea {
     grid-template-columns: 50% 50%;
   }
 }
+@media (min-width: 1140px) {
+  #osprey > div {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 
 #osprey2 {
   background-color: goldenrod;
@@ -427,6 +444,11 @@ textarea {
     grid-template-columns: 50% 50%;
   }
 }
+@media (min-width: 1140px) {
+  #osprey2 > div {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 
 /* =============
     Hero2
@@ -439,6 +461,29 @@ textarea {
   gap: 16px;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". carda .";
+}
+@media (min-width: 768px) {
+  #carda aside {
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-areas: "c1 c1 c2 c2";
+  }
+}
+@media (min-width: 1200px) {
+  #carda aside {
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-areas: "c1 c1 c2 c2";
+  }
+}
+@media (min-width: 1140px) {
+  #carda aside {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#carda aside #c1 {
+  grid-area: c1;
+}
+#carda aside #c2 {
+  grid-area: c2;
 }
 #carda aside > div {
   grid-area: carda;
@@ -490,6 +535,11 @@ textarea {
   background-color: lightgreen;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media (min-width: 1140px) {
+  #newscards > div ul {
+    grid-template-columns: auto 1440px auto;
+  }
 }
 @media (min-width: 1200px) {
   #newscards > div ul #p1 {
