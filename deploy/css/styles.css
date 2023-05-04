@@ -327,27 +327,6 @@ template {
 /* =============
     Base
 ============= */
-.header-footer-grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header-footer .";
-}
-.header-footer-grid > div {
-  grid-area: header-footer;
-}
-
-.large-images {
-  width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  list-style: none;
-}
-
 /* =============
     Typography
 ============= */
@@ -378,191 +357,15 @@ textarea {
 /* =============
     Header
 ============= */
-@media (min-width: 1140px) {
-  header {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-
 /* =============
     Footer
 ============= */
-@media (min-width: 1140px) {
-  footer {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-
 /* =============
     Hero
-============= */
-#osprey {
-  background-color: darkorange;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". osprey .";
-}
-#osprey > div {
-  grid-area: osprey;
-}
-@media (min-width: 768px) {
-  #osprey > div {
-    display: grid;
-    grid-template-columns: 40% auto;
-  }
-}
-@media (min-width: 1200px) {
-  #osprey > div {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-}
-@media (min-width: 1140px) {
-  #osprey > div {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-
-#osprey2 {
-  background-color: goldenrod;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". location .";
-}
-#osprey2 > div {
-  grid-area: location;
-}
-@media (min-width: 768px) {
-  #osprey2 > div {
-    display: grid;
-    grid-template-columns: 40% auto;
-  }
-}
-@media (min-width: 1200px) {
-  #osprey2 > div {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-}
-@media (min-width: 1140px) {
-  #osprey2 > div {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-
-/* =============
-    Hero2
 ============= */
 /* =============
     Card 
 ============= */
-#carda aside {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". carda .";
-}
-@media (min-width: 768px) {
-  #carda aside {
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-areas: "c1 c1 c2 c2";
-  }
-}
-@media (min-width: 1200px) {
-  #carda aside {
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-areas: "c1 c1 c2 c2";
-  }
-}
-@media (min-width: 1140px) {
-  #carda aside {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-#carda aside #c1 {
-  grid-area: c1;
-}
-#carda aside #c2 {
-  grid-area: c2;
-}
-#carda aside > div {
-  grid-area: carda;
-  display: grid;
-  grid-template-columns: 70% auto;
-}
-
 /* =============
     Card 2
 ============= */
-#news {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". news .";
-}
-#news > div {
-  grid-area: news;
-}
-
-#newscards {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". news .";
-}
-#newscards > div {
-  grid-area: news;
-  display: grid;
-  gap: 16px;
-}
-#newscards > div ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 16px;
-}
-@media (min-width: 768px) {
-  #newscards > div ul {
-    grid-template-columns: 50% 50%;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "p1 p1 p2 p2 p3 p3" ". p4 p4 p5 p5 .";
-  }
-}
-#newscards > div ul li {
-  list-style: none;
-  background-color: lightgreen;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media (min-width: 1140px) {
-  #newscards > div ul {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul #p1 {
-    grid-area: p1;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul #p2 {
-    grid-area: p2;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul #p3 {
-    grid-area: p3;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul #p4 {
-    grid-area: p4;
-  }
-}
-@media (min-width: 1200px) {
-  #newscards > div ul #p5 {
-    grid-area: p5;
-  }
-}
