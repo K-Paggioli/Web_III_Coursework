@@ -331,6 +331,33 @@ template {
   width: 100%;
 }
 
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
+.show-med {
+  display: none;
+}
+@media (min-width: 576px) {
+  .show-med {
+    display: block;
+  }
+}
+
+.show-small {
+  display: block;
+}
+@media (min-width: 576px) {
+  .show-small {
+    display: none;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -402,13 +429,43 @@ footer > div {
 /* =============
     Hero
 ============= */
-#hero section {
+@media (min-width: 768px) {
+  #hero #hero-cards {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #hero-cards {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#hero #hero-cards section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
 }
-#hero section > div {
+#hero #hero-cards section > div {
   grid-area: hero-sub;
+}
+#hero #hero-cards #hero-bottom-left {
+  background-color: yellow;
+}
+@media (min-width: 1140px) {
+  #hero #hero-cards #hero-bottom-left {
+    display: grid;
+    grid-template-columns: 20% auto 16px;
+  }
+}
+#hero #hero-cards #hero-bottom-right {
+  background-color: orange;
+}
+@media (min-width: 1140px) {
+  #hero #hero-cards #hero-bottom-right {
+    display: grid;
+    grid-template-columns: 16px auto 20%;
+  }
 }
 
 /* =============
