@@ -377,14 +377,6 @@ header #logo {
 header #logo > div {
   grid-area: logo;
 }
-header #nav {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". navbar .";
-}
-header #nav > div {
-  grid-area: navbar;
-}
 header #form-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
