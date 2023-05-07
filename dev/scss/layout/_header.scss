@@ -1,3 +1,50 @@
 /* =============
     Header
 ============= */
+header{
+    #logo{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". logo .";
+        >div{
+            grid-area: logo;
+            img{
+
+            }
+        }
+        
+    }
+    #nav{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". navbar .";
+        >div{
+            grid-area: navbar;
+            nav{
+                img{
+    
+                }
+            }
+        }
+        
+    }
+    #form-content{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". forms .";
+        >div{
+            grid-area: forms;
+            form{
+                input{
+    
+                }
+                button{
+                    img{
+    
+                    }
+                }
+            } 
+        }
+        
+    }
+}
