@@ -10,6 +10,9 @@ html {
 /* =============
     Variables
 ============= */
+/* =============
+    was 1024
+============= */
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -334,7 +337,7 @@ template {
 .show-large {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .show-large {
     display: block;
   }
@@ -355,6 +358,15 @@ template {
 @media (min-width: 576px) {
   .show-small {
     display: none;
+  }
+}
+
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1140px) {
+  .show-extra-large {
+    display: block;
   }
 }
 
@@ -421,9 +433,37 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: aquamarine;
+}
+@media (min-width: 1140px) {
+  footer {
+    grid-template-columns: auto 1024px auto;
+  }
 }
 footer > div {
   grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1200px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+footer > div #f1 {
+  grid-area: f1;
+}
+footer > div #f2 {
+  grid-area: f2;
+}
+footer > div #f3 {
+  grid-area: f3;
 }
 
 /* =============
@@ -435,7 +475,7 @@ footer > div {
     grid-template-columns: 40% auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   #hero #hero-cards {
     display: grid;
     grid-template-columns: 50% auto;
@@ -508,11 +548,115 @@ footer > div {
 /* =============
     Card 2
 ============= */
-#cardb section .card-data {
+@media (min-width: 768px) {
+  #cardb {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". news .";
+  }
+}
+@media (min-width: 1140px) {
+  #cardb {
+    grid-template-columns: auto 1024px auto;
+  }
+}
+#cardb > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #cardb > div {
+    grid-area: news;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "n1 n1 n1 n1" "n2 n2 n3 n3" "n4 n4 n5 n5" ".. n6 n6 ..";
+  }
+}
+@media (min-width: 1200px) {
+  #cardb > div {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "n1 n1 n1 n1 n1 n1" "n2 n2 n3 n3 n4 n4" ".. n5 n5 n6 n6 ..";
+  }
+}
+#cardb > div section .card-data {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cardb .";
+  background-color: papayawhip;
 }
-#cardb section .card-data > div {
+#cardb > div section .card-data > div {
   grid-area: cardb;
+}
+@media (min-width: 768px) {
+  #cardb > div #n1 {
+    grid-area: n1;
+  }
+}
+@media (min-width: 768px) {
+  #cardb > div #n2 {
+    grid-area: n2;
+  }
+}
+@media (min-width: 768px) {
+  #cardb > div #n3 {
+    grid-area: n3;
+  }
+}
+@media (min-width: 768px) {
+  #cardb > div #n4 {
+    grid-area: n4;
+  }
+}
+@media (min-width: 768px) {
+  #cardb > div #n5 {
+    grid-area: n5;
+  }
+}
+@media (min-width: 768px) {
+  #cardb > div #n6 {
+    grid-area: n6;
+  }
+}
+
+/* =============
+    Gallery
+============= */
+@media (min-width: 1200px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+  }
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery ul {
+    grid-area: gallery;
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1140px) {
+  #gallery ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+@media (min-width: 1140px) {
+  #gallery ul #g1 {
+    grid-area: g1;
+  }
+}
+@media (min-width: 1140px) {
+  #gallery ul #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1140px) {
+  #gallery ul #g3 {
+    grid-area: g3;
+  }
 }

@@ -36,18 +36,80 @@
 ============= */
 
 #cardb{
-    section{
-        img{
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas:". news ."
+    }
 
+    @include xxl{
+        grid-template-columns: auto 1024px auto;
+    }
+    >div{
+        display: grid;
+        gap: 16px;
+        @include md{
+            grid-area: news;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "n1 n1 n1 n1"
+            "n2 n2 n3 n3"
+            "n4 n4 n5 n5"
+            ".. n6 n6 ..";
         }
-        .card-data{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". cardb .";
-            >div{
-                grid-area: cardb;
+        @include lg{
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "n1 n1 n1 n1 n1 n1"
+            "n2 n2 n3 n3 n4 n4"
+            ".. n5 n5 n6 n6 ..";
+        }
+        section{
+            img{
+    
+            }
+            .card-data{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". cardb .";
+                background-color: papayawhip;
+                >div{
+                    grid-area: cardb;
+    
+                }
+            }
+        }
 
+        #n1{
+            @include md{
+                grid-area: n1;
+            }
+        }
+        #n2{
+            @include md{
+                grid-area: n2;
+            }
+        }
+        #n3{
+            @include md{
+                grid-area: n3;
+            }
+        }
+        #n4{
+            @include md{
+                grid-area: n4;
+            }
+        }
+        #n5{
+            @include md{
+                grid-area: n5;
+            }
+        }
+        #n6{
+            @include md{
+                grid-area: n6;
             }
         }
     }
+    
 }
