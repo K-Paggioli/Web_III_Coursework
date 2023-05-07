@@ -13,8 +13,23 @@
         }
     }
 }
-
-
 /* =============
     Card 2
 ============= */
+
+#cardb{
+    section{
+        img{
+
+        }
+        .card-data{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". cardb .";
+            >div{
+                grid-area: cardb;
+
+            }
+        }
+    }
+}

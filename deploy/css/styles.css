@@ -419,3 +419,11 @@ header #form-content > div {
 /* =============
     Card 2
 ============= */
+#cardb section .card-data {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". cardb .";
+}
+#cardb section .card-data > div {
+  grid-area: cardb;
+}
