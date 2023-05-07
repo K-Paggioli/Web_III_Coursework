@@ -8,6 +8,8 @@ header{
         grid-template-areas: ". logo .";
         >div{
             grid-area: logo;
+            display: grid;
+            grid-template-columns: 88.5% auto;
             img{
 
             }

@@ -376,6 +376,8 @@ header #logo {
 }
 header #logo > div {
   grid-area: logo;
+  display: grid;
+  grid-template-columns: 88.5% auto;
 }
 header #form-content {
   display: grid;
@@ -403,6 +405,17 @@ header #form-content > div {
 /* =============
     Card 
 ============= */
+#carda aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". carda .";
+}
+#carda aside > div {
+  grid-area: carda;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
 /* =============
     Card 2
 ============= */
