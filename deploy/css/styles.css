@@ -471,7 +471,30 @@ footer > div {
 /* =============
     Card 
 ============= */
+@media (min-width: 768px) {
+  #carda {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". cards-below-hero .";
+  }
+}
+@media (min-width: 1140px) {
+  #carda {
+    grid-template-columns: auto 1024px auto;
+  }
+}
+#carda > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #carda > div {
+    grid-area: cards-below-hero;
+    grid-template-columns: 50% auto;
+  }
+}
 #carda aside {
+  background-color: teal;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". carda .";
