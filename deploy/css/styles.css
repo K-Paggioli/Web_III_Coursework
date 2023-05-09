@@ -472,6 +472,7 @@ header #logo nav img {
 }
 #form-content > div {
   grid-area: forms;
+  padding: 16px 8px;
 }
 #form-content > div form {
   display: flex;
@@ -486,10 +487,10 @@ header #logo nav img {
 #form-content > div form #s1 {
   color: var(--dblue);
   background-color: var(--cream);
-  padding: 16px 8px 16px 8px;
-  border: 0px;
+  width: 100%;
+  border: none;
   outline: 0px;
-  border-bottom: 1px var(--gold);
+  border-bottom: 2px solid var(--gold);
   box-sizing: border-box;
   grid-area: s1;
 }
