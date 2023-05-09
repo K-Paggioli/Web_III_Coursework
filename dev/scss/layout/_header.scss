@@ -18,7 +18,7 @@ header{
         >div{
             grid-area: logo;
             display: grid;
-            grid-template-columns: auto 13%;
+            grid-template-columns: auto 56px;
             }
             img{
                 padding:16px 0px;
@@ -39,18 +39,22 @@ header{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". forms .";
+        @include xl{
+            grid-template-columns: auto 1168px auto;
+        }
         >div{
             grid-area: forms;
+            
             form{
                 display: grid;
-                grid-template-columns: repeat (12 1fr);
+                grid-template-columns: repeat (16 1fr);
                 grid-template-areas: 
-                "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+                "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+                
                 #s1{ 
                     color: var(--dblue);
                     background-color: var(--cream);
                     padding: 16px 8px;
-                    width:100%;
                     border: 0px;
                     outline: 0px;
                     border-bottom: 1px var(--gold);

@@ -9,8 +9,8 @@ footer{
     color: var(--dblue);
     margin: 32px 0px 0px 0px;
 
-    @include xxl{
-        grid-template-columns: auto 1024px auto;
+    @include xl{
+        grid-template-columns: auto 1168px auto;
     }
 
     >div{
@@ -33,6 +33,22 @@ footer{
         
         #f1{
             grid-area: f1;
+            h3{
+            }
+            ul{
+                li{
+                    address{
+                        padding: 0px 0px 24px 0px;
+                        
+                    }
+                    a{
+                        padding: 0px 0px 24px 0px;
+                    }
+                    img{
+                        padding: 0px 8px;
+                    }
+                }
+            }
             a{
                 color: var(--dblue);
             }

@@ -438,7 +438,7 @@ header #logo {
 header #logo > div {
   grid-area: logo;
   display: grid;
-  grid-template-columns: auto 13%;
+  grid-template-columns: auto 56px;
 }
 header #logo img {
   padding: 16px 0px;
@@ -457,19 +457,23 @@ header #logo nav img {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". forms .";
 }
+@media (min-width: 1200px) {
+  #form-content {
+    grid-template-columns: auto 1168px auto;
+  }
+}
 #form-content > div {
   grid-area: forms;
 }
 #form-content > div form {
   display: grid;
-  grid-template-columns: repeat 12 1fr;
-  grid-template-areas: "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+  grid-template-columns: repeat 16 1fr;
+  grid-template-areas: "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
 }
 #form-content > div form #s1 {
   color: var(--dblue);
   background-color: var(--cream);
   padding: 16px 8px;
-  width: 100%;
   border: 0px;
   outline: 0px;
   border-bottom: 1px var(--gold);
@@ -492,9 +496,9 @@ footer {
   color: var(--dblue);
   margin: 32px 0px 0px 0px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   footer {
-    grid-template-columns: auto 1024px auto;
+    grid-template-columns: auto 1168px auto;
   }
 }
 footer > div {
@@ -516,6 +520,15 @@ footer > div {
 }
 footer > div #f1 {
   grid-area: f1;
+}
+footer > div #f1 ul li address {
+  padding: 0px 0px 24px 0px;
+}
+footer > div #f1 ul li a {
+  padding: 0px 0px 24px 0px;
+}
+footer > div #f1 ul li img {
+  padding: 0px 8px;
 }
 footer > div #f1 a {
   color: var(--dblue);
@@ -619,9 +632,9 @@ footer > div #f3 {
     grid-template-areas: ". cards-below-hero .";
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   #carda {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1168px auto;
   }
 }
 #carda > div {
@@ -669,9 +682,9 @@ footer > div #f3 {
     grid-template-areas: ". news .";
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   #cardb {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 1168px auto;
   }
 }
 #cardb > div {

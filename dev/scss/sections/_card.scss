@@ -8,8 +8,8 @@
         grid-template-areas: ". cards-below-hero .";
     }
 
-    @include xxl{
-        grid-template-columns: auto 1200px auto;
+    @include xl{
+        grid-template-columns: auto 1168px auto;
     }
     >div{
         display: grid;
@@ -55,8 +55,8 @@
         grid-template-areas:". news ."
     }
 
-    @include xxl{
-        grid-template-columns: auto 1200px auto;
+    @include xl{
+        grid-template-columns: auto 1168px auto;
     }
     >div{
         display: grid;
