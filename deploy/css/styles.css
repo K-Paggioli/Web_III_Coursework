@@ -390,6 +390,10 @@ ul li {
   list-style: none;
 }
 
+.button-spacing {
+  padding: 4px 16px;
+}
+
 /* =============
     Typography
 ============= */
@@ -556,6 +560,11 @@ footer > div #f1 a {
 footer > div #f2 {
   grid-area: f2;
 }
+@media (min-width: 1024px) {
+  footer > div #f2 {
+    border: 0px 164px 0px 0px;
+  }
+}
 footer > div #f2 h3 {
   padding: 0px 0px 12px 0px;
 }
@@ -568,7 +577,7 @@ footer > div #f2 form input {
   border: none;
   padding: 16px 24px;
   box-sizing: border-box;
-  color: var(--2E6379);
+  color: var(--blue);
   background-color: var(--lblue);
 }
 footer > div #f2 form button {
@@ -619,11 +628,15 @@ footer > div #f3 ul #spacing {
   color: white;
   padding: 0px 0px 8px 0px;
 }
-#hero #hero-cards #hero-bottom-left a {
+#hero #hero-cards #hero-bottom-left aside {
+  display: flex;
+  justify-content: flex-end;
+}
+#hero #hero-cards #hero-bottom-left aside a {
   text-align: right;
   color: white;
 }
-#hero #hero-cards #hero-bottom-left img {
+#hero #hero-cards #hero-bottom-left aside img {
   display: block;
   margin-left: auto;
 }
@@ -638,11 +651,15 @@ footer > div #f3 ul #spacing {
   color: white;
   padding: 8px 0px 32px 0px;
 }
-#hero #hero-cards #hero-bottom-right a {
+#hero #hero-cards #hero-bottom-right aside {
+  display: flex;
+  justify-content: flex-end;
+}
+#hero #hero-cards #hero-bottom-right aside a {
   text-align: right;
   color: white;
 }
-#hero #hero-cards #hero-bottom-right img {
+#hero #hero-cards #hero-bottom-right aside img {
   display: block;
   margin-left: auto;
 }

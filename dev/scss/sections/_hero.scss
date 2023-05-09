@@ -26,14 +26,18 @@
             background-color: var(--orange);
             color: white;
             padding: 0px 0px 8px 0px;
-            a{
-                text-align: right;
-                color: white;
-            }
-            img{
-                display:block;
-                margin-left: auto;
-            }
+            aside{
+                display: flex;
+                justify-content: flex-end;
+                a{
+                    text-align: right;
+                    color: white;
+                }
+                img{
+                    display:block;
+                    margin-left: auto;
+                }
+            } 
             @include xxl{
                 display: grid;
                 grid-template-columns: 20% auto 16px;
@@ -43,14 +47,19 @@
             background-color: var(--gold);
             color: white;
             padding: 8px 0px 32px 0px;
-            a{
-                text-align: right;
-                color:white;
+            aside{
+                display: flex;
+                justify-content: flex-end;
+                a{
+                    text-align: right;
+                    color:white;
+                }
+                img{
+                    display:block;
+                    margin-left: auto;
+                }
             }
-            img{
-                display:block;
-                margin-left: auto;
-            }
+            
             @include md{
                 padding: 8px 0px 8px 0px;
             }
