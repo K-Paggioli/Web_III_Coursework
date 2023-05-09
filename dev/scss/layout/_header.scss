@@ -18,10 +18,17 @@ header{
         >div{
             grid-area: logo;
             display: grid;
-            grid-template-columns: auto 12%;
+            grid-template-columns: auto 13%;
+            }
+            img{
+                padding:16px 0px;
+            }
             nav{
                 img{
-                 padding:32px 0px;
+                    margin: 16px 0px;
+                    @include sm{
+                        margin:32px 0px;
+                    } 
                 }
             }
             
@@ -36,14 +43,13 @@ header{
             grid-area: forms;
             form{
                 display: grid;
-                grid-template-columns: repeat (6 1fr);
+                grid-template-columns: repeat (12 1fr);
                 grid-template-areas: 
-                "s1 s1 s1 s1 s1 s2";
-                #s1{
-                    
+                "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+                #s1{ 
                     color: var(--dblue);
                     background-color: var(--cream);
-                    padding: 16px 24px;
+                    padding: 16px 8px;
                     width:100%;
                     border: none;
                     box-sizing: border-box;
@@ -52,14 +58,13 @@ header{
                 }
                 #s2{
                     grid-area: s2;
-                    
+                    border: none;
+                    background-color: var(--cream);
                     img{
-                        border: none;
-                        background-color: var(--cream);
+                        
                     }
                 }
             } 
         }
         
     }
-}
