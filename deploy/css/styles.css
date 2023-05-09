@@ -437,8 +437,12 @@ header #logo {
 }
 header #logo > div {
   grid-area: logo;
+  display: flex;
+  justify-content: space-between;
+  /*========
   display: grid;
   grid-template-columns: auto 56px;
+  =========*/
 }
 header #logo img {
   padding: 16px 0px;
@@ -466,14 +470,19 @@ header #logo nav img {
   grid-area: forms;
 }
 #form-content > div form {
+  display: flex;
+  justify-content: space-between;
+  /*===========
   display: grid;
-  grid-template-columns: repeat 16 1fr;
-  grid-template-areas: "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+  grid-template-columns: repeat (16 1fr);
+  grid-template-areas: 
+  "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+  =========*/
 }
 #form-content > div form #s1 {
   color: var(--dblue);
   background-color: var(--cream);
-  padding: 16px 8px;
+  padding: 16px 8px 16px 8px;
   border: 0px;
   outline: 0px;
   border-bottom: 1px var(--gold);
@@ -494,7 +503,7 @@ footer {
   grid-template-areas: ". footer .";
   background-color: var(--yellow);
   color: var(--dblue);
-  margin: 32px 0px 0px 0px;
+  margin: 32px 0px 18px 0px;
 }
 @media (min-width: 1200px) {
   footer {
@@ -503,9 +512,11 @@ footer {
 }
 footer > div {
   grid-area: footer;
+  padding: 16px 0px 18px 0px;
 }
 @media (min-width: 768px) {
   footer > div {
+    padding: 24px 0px 40px 0px;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "f1 f2" "f1 f3";
@@ -513,6 +524,7 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
+    padding: 48px 0px 50px 0px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 f2 f3";
     gap: 24px;
@@ -553,6 +565,12 @@ footer > div #f2 form button {
 }
 footer > div #f3 {
   grid-area: f3;
+}
+footer > div #f3 ul {
+  display: flex;
+}
+footer > div #f3 ul li {
+  padding: 0px 16px 0px 0px;
 }
 
 /* =============

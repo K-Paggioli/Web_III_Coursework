@@ -7,7 +7,7 @@ footer{
     grid-template-areas: ". footer .";
     background-color: var(--yellow);
     color: var(--dblue);
-    margin: 32px 0px 0px 0px;
+    margin: 32px 0px 18px 0px;
 
     @include xl{
         grid-template-columns: auto 1168px auto;
@@ -15,8 +15,10 @@ footer{
 
     >div{
         grid-area: footer;
+        padding: 16px 0px 18px 0px;
 
         @include md{
+            padding: 24px 0px 40px 0px;
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas:
@@ -25,6 +27,7 @@ footer{
         }
 
         @include lg{
+            padding: 48px 0px 50px 0px;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
             "f1 f2 f3"; 
@@ -34,6 +37,7 @@ footer{
         #f1{
             grid-area: f1;
             h3{
+
             }
             ul{
                 li{
@@ -76,6 +80,13 @@ footer{
         }
         #f3{
             grid-area: f3;
+            ul{
+                display: flex;
+                li{
+                    padding:0px 16px 0px 0px;
+                }
+            }
+            
         }
     }
 }
