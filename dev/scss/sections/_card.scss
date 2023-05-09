@@ -14,9 +14,13 @@
     >div{
         display: grid;
         gap: 16px;
+        margin:16px 0px 24px 0px;
+        box-sizing: border-box;
         @include md{
             grid-area: cards-below-hero;
             grid-template-columns: 50% auto;
+            margin:24px 0px 40px 0px;
+            box-sizing: border-box;
         }
     }
     aside{
@@ -25,6 +29,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". carda .";
+        padding: 16px 0px 24px 0px;
         >div{
             grid-area: carda;
             display: grid;
@@ -35,6 +40,7 @@
             color: white;
             padding: 16px 24px;
             margin: 12px 0px;
+            box-sizing: border-box;
         }
     }
 }
@@ -81,13 +87,16 @@
                 grid-template-areas: ". cardb .";
                 background-color: var(--sage);
                 color: var(--dblue);
-                padding: 0px 16px 36px 16px;
+                padding: 0px 16px 40px 16px;
                 >div{
                     grid-area: cardb;
+                    p{
+                        padding:0px 0px 24px 0px;
+                    }
                     a{
                         background-color: var(--orange);
                         color: white;
-                        margin: 12px 0px;
+                        
                         padding: 16px 24px;
                     }
                 }

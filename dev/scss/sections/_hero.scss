@@ -23,16 +23,37 @@
             }
         }
         #hero-bottom-left{
-            background-color: var(--gold);
+            background-color: var(--orange);
             color: white;
+            padding: 0px 0px 8px 0px;
+            a{
+                text-align: right;
+                color: white;
+            }
+            img{
+                display:block;
+                margin-left: auto;
+            }
             @include xxl{
                 display: grid;
                 grid-template-columns: 20% auto 16px;
             }
         }
         #hero-bottom-right{
-            background-color: var(--orange);
+            background-color: var(--gold);
             color: white;
+            padding: 8px 0px 32px 0px;
+            a{
+                text-align: right;
+                color:white;
+            }
+            img{
+                display:block;
+                margin-left: auto;
+            }
+            @include md{
+                padding: 8px 0px 8px 0px;
+            }
             @include xxl{
                 display: grid;
                 grid-template-columns: 16px auto 20%;

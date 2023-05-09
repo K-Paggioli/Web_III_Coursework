@@ -490,6 +490,7 @@ footer {
   grid-template-areas: ". footer .";
   background-color: var(--yellow);
   color: var(--dblue);
+  margin: 32px 0px 0px 0px;
 }
 @media (min-width: 1440px) {
   footer {
@@ -565,8 +566,17 @@ footer > div #f3 {
   grid-area: hero-sub;
 }
 #hero #hero-cards #hero-bottom-left {
-  background-color: var(--gold);
+  background-color: var(--orange);
   color: white;
+  padding: 0px 0px 8px 0px;
+}
+#hero #hero-cards #hero-bottom-left a {
+  text-align: right;
+  color: white;
+}
+#hero #hero-cards #hero-bottom-left img {
+  display: block;
+  margin-left: auto;
 }
 @media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-left {
@@ -575,8 +585,22 @@ footer > div #f3 {
   }
 }
 #hero #hero-cards #hero-bottom-right {
-  background-color: var(--orange);
+  background-color: var(--gold);
   color: white;
+  padding: 8px 0px 32px 0px;
+}
+#hero #hero-cards #hero-bottom-right a {
+  text-align: right;
+  color: white;
+}
+#hero #hero-cards #hero-bottom-right img {
+  display: block;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  #hero #hero-cards #hero-bottom-right {
+    padding: 8px 0px 8px 0px;
+  }
 }
 @media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-right {
@@ -603,11 +627,15 @@ footer > div #f3 {
 #carda > div {
   display: grid;
   gap: 16px;
+  margin: 16px 0px 24px 0px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   #carda > div {
     grid-area: cards-below-hero;
     grid-template-columns: 50% auto;
+    margin: 24px 0px 40px 0px;
+    box-sizing: border-box;
   }
 }
 #carda aside {
@@ -616,6 +644,7 @@ footer > div #f3 {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". carda .";
+  padding: 16px 0px 24px 0px;
 }
 #carda aside > div {
   grid-area: carda;
@@ -627,6 +656,7 @@ footer > div #f3 {
   color: white;
   padding: 16px 24px;
   margin: 12px 0px;
+  box-sizing: border-box;
 }
 
 /* =============
@@ -667,15 +697,17 @@ footer > div #f3 {
   grid-template-areas: ". cardb .";
   background-color: var(--sage);
   color: var(--dblue);
-  padding: 0px 16px 36px 16px;
+  padding: 0px 16px 40px 16px;
 }
 #cardb > div section .card-data > div {
   grid-area: cardb;
 }
+#cardb > div section .card-data > div p {
+  padding: 0px 0px 24px 0px;
+}
 #cardb > div section .card-data > div a {
   background-color: var(--orange);
   color: white;
-  margin: 12px 0px;
   padding: 16px 24px;
 }
 @media (min-width: 768px) {
