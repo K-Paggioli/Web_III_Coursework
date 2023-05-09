@@ -25,7 +25,8 @@ footer{
         @include lg{
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
-            "f1 f2 f3";  
+            "f1 f2 f3"; 
+            gap:24px; 
         }
         
         #f1{
@@ -33,6 +34,19 @@ footer{
         }
         #f2{
             grid-area: f2;
+            form{
+                input{
+                    width: 100%;
+                    border: none;
+                    padding: 16px 24px;
+                    box-sizing: border-box;
+                }
+                button{
+                    border: none;
+                    padding: 4px 16px;
+                }
+                
+            }
         }
         #f3{
             grid-area: f3;

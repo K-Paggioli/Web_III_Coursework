@@ -337,7 +337,7 @@ template {
 .show-large {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .show-large {
     display: block;
   }
@@ -364,7 +364,7 @@ template {
 .show-extra-large {
   display: none;
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   .show-extra-large {
     display: block;
   }
@@ -426,6 +426,9 @@ header #form-content {
 header #form-content > div {
   grid-area: forms;
 }
+header #form-content > div form button {
+  border: none;
+}
 /* =============
     Footer
 ============= */
@@ -435,7 +438,7 @@ footer {
   grid-template-areas: ". footer .";
   background-color: aquamarine;
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   footer {
     grid-template-columns: auto 1024px auto;
   }
@@ -450,10 +453,11 @@ footer > div {
     grid-template-areas: "f1 f2" "f1 f3";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   footer > div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 f2 f3";
+    gap: 24px;
   }
 }
 footer > div #f1 {
@@ -461,6 +465,16 @@ footer > div #f1 {
 }
 footer > div #f2 {
   grid-area: f2;
+}
+footer > div #f2 form input {
+  width: 100%;
+  border: none;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+footer > div #f2 form button {
+  border: none;
+  padding: 4px 16px;
 }
 footer > div #f3 {
   grid-area: f3;
@@ -475,7 +489,7 @@ footer > div #f3 {
     grid-template-columns: 40% auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #hero #hero-cards {
     display: grid;
     grid-template-columns: 50% auto;
@@ -492,7 +506,7 @@ footer > div #f3 {
 #hero #hero-cards #hero-bottom-left {
   background-color: yellow;
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-left {
     display: grid;
     grid-template-columns: 20% auto 16px;
@@ -501,7 +515,7 @@ footer > div #f3 {
 #hero #hero-cards #hero-bottom-right {
   background-color: orange;
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-right {
     display: grid;
     grid-template-columns: 16px auto 20%;
@@ -518,9 +532,9 @@ footer > div #f3 {
     grid-template-areas: ". cards-below-hero .";
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #carda {
-    grid-template-columns: auto 1024px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 #carda > div {
@@ -555,9 +569,9 @@ footer > div #f3 {
     grid-template-areas: ". news .";
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #cardb {
-    grid-template-columns: auto 1024px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 #cardb > div {
@@ -571,7 +585,7 @@ footer > div #f3 {
     grid-template-areas: "n1 n1 n1 n1" "n2 n2 n3 n3" "n4 n4 n5 n5" ".. n6 n6 ..";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #cardb > div {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "n1 n1 n1 n1 n1 n1" "n2 n2 n3 n3 n4 n4" ".. n5 n5 n6 n6 ..";
@@ -620,7 +634,7 @@ footer > div #f3 {
 /* =============
     Gallery
 ============= */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #gallery {
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -633,29 +647,29 @@ footer > div #f3 {
     grid-template-columns: 50% auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #gallery ul {
     grid-area: gallery;
     grid-template-columns: 60% auto;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #gallery ul {
     grid-template-columns: 60% auto;
     grid-template-areas: "g1 g2" "g1 g3";
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #gallery ul #g1 {
     grid-area: g1;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #gallery ul #g2 {
     grid-area: g2;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   #gallery ul #g3 {
     grid-area: g3;
   }

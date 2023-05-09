@@ -9,7 +9,7 @@
     }
 
     @include xxl{
-        grid-template-columns: auto 1024px auto;
+        grid-template-columns: auto 1200px auto;
     }
     >div{
         display: grid;
@@ -43,7 +43,7 @@
     }
 
     @include xxl{
-        grid-template-columns: auto 1024px auto;
+        grid-template-columns: auto 1200px auto;
     }
     >div{
         display: grid;
