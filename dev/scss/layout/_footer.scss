@@ -7,7 +7,7 @@ footer{
     grid-template-areas: ". footer .";
     background-color: var(--yellow);
     color: var(--dblue);
-    margin: 32px 0px 18px 0px;
+    padding: 32px 0px 18px 0px;
 
     @include xl{
         grid-template-columns: auto 1168px auto;
