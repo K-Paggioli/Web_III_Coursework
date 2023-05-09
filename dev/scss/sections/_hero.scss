@@ -23,14 +23,16 @@
             }
         }
         #hero-bottom-left{
-            background-color:yellow;
+            background-color: var(--gold);
+            color: white;
             @include xxl{
                 display: grid;
                 grid-template-columns: 20% auto 16px;
             }
         }
         #hero-bottom-right{
-            background-color:orange;
+            background-color: var(--orange);
+            color: white;
             @include xxl{
                 display: grid;
                 grid-template-columns: 16px auto 20%;
