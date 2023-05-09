@@ -30,12 +30,14 @@
                 display: flex;
                 justify-content: flex-end;
                 a{
+                    display: flex;
                     text-align: right;
                     color: white;
                 }
                 img{
-                    display:block;
+                    display: block;
                     margin-left: auto;
+                    padding: 0px 8px;
                 }
             } 
             @include xxl{
@@ -51,12 +53,14 @@
                 display: flex;
                 justify-content: flex-end;
                 a{
+                    display: flex;
                     text-align: right;
                     color:white;
                 }
                 img{
                     display:block;
                     margin-left: auto;
+                    padding: 0px 8px;
                 }
             }
             
