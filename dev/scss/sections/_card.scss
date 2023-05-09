@@ -20,7 +20,8 @@
         }
     }
     aside{
-        background-color:teal;
+        background-color: var(--sage);
+        color: var(--dblue);
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". carda .";
@@ -28,6 +29,12 @@
             grid-area: carda;
             display: grid;
             grid-template-columns: 70% auto;
+        }
+        a{
+            background-color: var(--orange);
+            color: white;
+            padding: 16px 24px;
+            margin: 12px 0px;
         }
     }
 }
@@ -72,10 +79,17 @@
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". cardb .";
-                background-color: papayawhip;
+                background-color: var(--sage);
+                color: var(--dblue);
+                padding: 0px 16px 36px 16px;
                 >div{
                     grid-area: cardb;
-    
+                    a{
+                        background-color: var(--orange);
+                        color: white;
+                        margin: 12px 0px;
+                        padding: 16px 24px;
+                    }
                 }
             }
         }

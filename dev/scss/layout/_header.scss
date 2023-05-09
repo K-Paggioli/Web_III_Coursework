@@ -2,6 +2,15 @@
     Header
 ============= */
 header{
+    background-color: var(--cream);
+    box-shadow: 0px 4px 10px gray;
+    
+    /* =========================
+    effect-style: Header Shadow
+    Effect: Drop shadow
+    Radius: 10px
+    Offset: 0px, 4px
+    ===========================*/
     #logo{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -9,7 +18,7 @@ header{
         >div{
             grid-area: logo;
             display: grid;
-            grid-template-columns: 88.5% auto;
+            grid-template-columns: auto 12%;
             img{
 
             }
@@ -24,10 +33,17 @@ header{
             grid-area: forms;
             form{
                 input{
-    
+                    color: var(--dblue);
+                    background-color: var(--cream);
+                    padding: 16px 24px;
+                    width:100%;
+                    border: none;
+                    box-sizing: border-box;
+
                 }
                 button{
-                    border:none;
+                    border: none;
+                    background-color: var(--cream);
                     img{
     
                     }

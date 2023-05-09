@@ -5,7 +5,8 @@ footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    background-color:aquamarine;
+    background-color: var(--yellow);
+    color: var(--dblue);
 
     @include xxl{
         grid-template-columns: auto 1024px auto;
@@ -31,6 +32,9 @@ footer{
         
         #f1{
             grid-area: f1;
+            a{
+                color: var(--dblue);
+            }
         }
         #f2{
             grid-area: f2;
@@ -40,10 +44,15 @@ footer{
                     border: none;
                     padding: 16px 24px;
                     box-sizing: border-box;
+                    color: var(--2E6379);
+                    background-color: var(--lblue);
                 }
                 button{
                     border: none;
                     padding: 4px 16px;
+                    margin: 24px 0px;
+                    background-color: var(--orange);
+                    color: white;
                 }
                 
             }
