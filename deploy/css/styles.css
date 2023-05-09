@@ -525,13 +525,21 @@ footer > div {
 @media (min-width: 1024px) {
   footer > div {
     padding: 48px 0px 50px 0px;
+    /*===========
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 f2 f3";
-    gap: 24px;
+    grid-template-areas:
+    "f1 f2 f3"; 
+    gap:24px; 
+    */
+    display: flex;
+    justify-content: space-between;
   }
 }
 footer > div #f1 {
   grid-area: f1;
+}
+footer > div #f1 h3 {
+  padding: 0px 0px 12px 0px;
 }
 footer > div #f1 ul li address {
   padding: 0px 0px 24px 0px;
@@ -548,6 +556,13 @@ footer > div #f1 a {
 footer > div #f2 {
   grid-area: f2;
 }
+footer > div #f2 h3 {
+  padding: 0px 0px 12px 0px;
+}
+footer > div #f2 form {
+  display: flex;
+  flex-direction: column;
+}
 footer > div #f2 form input {
   width: 100%;
   border: none;
@@ -559,17 +574,20 @@ footer > div #f2 form input {
 footer > div #f2 form button {
   border: none;
   padding: 4px 16px;
-  margin: 24px 0px;
+  margin: 24px 0px 0px auto;
   background-color: var(--orange);
   color: white;
 }
 footer > div #f3 {
   grid-area: f3;
 }
+footer > div #f3 h3 {
+  padding: 0px 0px 12px 0px;
+}
 footer > div #f3 ul {
   display: flex;
 }
-footer > div #f3 ul li {
+footer > div #f3 ul #spacing {
   padding: 0px 16px 0px 0px;
 }
 

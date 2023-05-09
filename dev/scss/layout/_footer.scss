@@ -16,6 +16,8 @@ footer{
     >div{
         grid-area: footer;
         padding: 16px 0px 18px 0px;
+        
+
 
         @include md{
             padding: 24px 0px 40px 0px;
@@ -28,16 +30,21 @@ footer{
 
         @include lg{
             padding: 48px 0px 50px 0px;
+            /*===========
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
             "f1 f2 f3"; 
             gap:24px; 
+            */
+            display:flex;
+            justify-content: space-between;
+            
         }
         
         #f1{
             grid-area: f1;
             h3{
-
+                padding: 0px 0px 12px 0px;
             }
             ul{
                 li{
@@ -58,8 +65,14 @@ footer{
             }
         }
         #f2{
+            h3{
+                padding: 0px 0px 12px 0px;
+            }
             grid-area: f2;
             form{
+                display: flex;
+                flex-direction: column;
+                
                 input{
                     width: 100%;
                     border: none;
@@ -68,10 +81,10 @@ footer{
                     color: var(--2E6379);
                     background-color: var(--lblue);
                 }
-                button{
+                button{ 
                     border: none;
                     padding: 4px 16px;
-                    margin: 24px 0px;
+                    margin: 24px 0px 0px auto;
                     background-color: var(--orange);
                     color: white;
                 }
@@ -79,10 +92,13 @@ footer{
             }
         }
         #f3{
+            h3{
+                padding: 0px 0px 12px 0px;
+            }
             grid-area: f3;
             ul{
                 display: flex;
-                li{
+                #spacing{
                     padding:0px 16px 0px 0px;
                 }
             }
