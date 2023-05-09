@@ -51,7 +51,9 @@ header{
                     background-color: var(--cream);
                     padding: 16px 8px;
                     width:100%;
-                    border: none;
+                    border: 0px;
+                    outline: 0px;
+                    border-bottom: 1px var(--gold);
                     box-sizing: border-box;
                     grid-area: s1;
 
