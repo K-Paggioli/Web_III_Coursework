@@ -609,6 +609,10 @@ footer > div #f3 ul #spacing {
 /* =============
     Hero
 ============= */
+#hero img {
+  font-size: 0;
+  display: block;
+}
 @media (min-width: 768px) {
   #hero #hero-cards {
     display: grid;
@@ -628,25 +632,23 @@ footer > div #f3 ul #spacing {
 }
 #hero #hero-cards .hero-bottom-content > div {
   grid-area: hero-sub;
+  display: flex;
+  align-items: center;
 }
 #hero #hero-cards #hero-bottom-left {
   background-color: var(--orange);
   color: white;
-  padding: 0px 0px 8px 0px;
 }
 #hero #hero-cards #hero-bottom-left aside {
-  display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+  /* img{
+       display: block;
+       margin-left: auto;
+       padding: 0px 8px;
+   } */
 }
 #hero #hero-cards #hero-bottom-left aside a {
   display: flex;
-  text-align: right;
-  color: white;
-}
-#hero #hero-cards #hero-bottom-left aside img {
-  display: block;
-  margin-left: auto;
-  padding: 0px 8px;
 }
 @media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-left {
@@ -657,21 +659,17 @@ footer > div #f3 ul #spacing {
 #hero #hero-cards #hero-bottom-right {
   background-color: var(--gold);
   color: white;
-  padding: 8px 0px 32px 0px;
 }
 #hero #hero-cards #hero-bottom-right aside {
-  display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+  /* img{
+      display:block;
+      margin-left: auto;
+      padding: 0px 8px;
+  } */
 }
 #hero #hero-cards #hero-bottom-right aside a {
   display: flex;
-  text-align: right;
-  color: white;
-}
-#hero #hero-cards #hero-bottom-right aside img {
-  display: block;
-  margin-left: auto;
-  padding: 0px 8px;
 }
 @media (min-width: 768px) {
   #hero #hero-cards #hero-bottom-right {

@@ -3,6 +3,11 @@
 ============= */
 #hero{
 
+    img{
+        font-size: 0;
+        display: block;
+    }
+
     #hero-cards{
         @include md{
             display: grid;
@@ -20,25 +25,23 @@
             grid-template-areas: ". hero-sub .";
             >div{
                 grid-area: hero-sub;
+                display: flex; 
+                align-items: center;
             }
         }
         #hero-bottom-left{
             background-color: var(--orange);
             color: white;
-            padding: 0px 0px 8px 0px;
             aside{
-                display: flex;
-                justify-content: flex-end;
-                a{
+               margin-left: auto;
+               a{
                     display: flex;
-                    text-align: right;
-                    color: white;
-                }
-                img{
+                } 
+               /* img{
                     display: block;
                     margin-left: auto;
                     padding: 0px 8px;
-                }
+                } */
             } 
             @include xxl{
                 display: grid;
@@ -48,20 +51,16 @@
         #hero-bottom-right{
             background-color: var(--gold);
             color: white;
-            padding: 8px 0px 32px 0px;
             aside{
-                display: flex;
-                justify-content: flex-end;
+                margin-left:auto;
                 a{
                     display: flex;
-                    text-align: right;
-                    color:white;
                 }
-                img{
+                /* img{
                     display:block;
                     margin-left: auto;
                     padding: 0px 8px;
-                }
+                } */
             }
             
             @include md{
