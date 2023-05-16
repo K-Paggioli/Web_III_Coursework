@@ -1,0 +1,154 @@
+/* =============
+    Footer
+============= */
+footer{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    background-color: var(--yellow);
+    color: var(--dblue);
+    padding: 32px 0px 18px 0px;
+
+    @include xl{
+        grid-template-columns: auto 1168px auto;
+    }
+
+    >div{
+        grid-area: footer;
+        padding: 16px 0px 18px 0px;
+        
+
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+            "f1 f2"
+            "f1 f3";
+        }
+
+        @include lg{
+
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+            "f1 f2 f2 f2 f3"; 
+            gap: 72px; 
+            align-content: center;
+
+            /* display:flex;           
+            justify-content: space-between; 
+            both solutions have problems; this one makes input small, other has it not align center/scale is off
+            */
+
+            
+            
+        }
+        
+        #f1{
+            grid-area: f1;
+            h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
+
+            }
+            ul{
+                li{
+                    h4{
+                        font-weight: 600;
+                        font-size: rem-calc(16);
+                        line-height: 19px;
+                    }
+                    section{
+                        display: flex;
+
+                        address{ 
+                            font-weight: 400; 
+                            font-size: rem-calc(12);
+                            line-height: 14px;
+                            margin-bottom: 8px;
+                            margin-top: -12px;
+                    
+                        }
+                        a:link, a:visited{
+                            color: var(--dblue);
+                            
+                                &:hover, &:active{
+                                    color: white;
+                                    transition: 0.25s;
+                                }
+                            }
+                        img{
+                            margin-right: 16px;
+                        }
+
+                        #pin{
+                            margin-bottom: 8px;
+                            margin-top: -12px;
+                        }
+
+                        #phone{
+
+                        }
+                    }
+                    
+                }
+            }
+            a{
+                color: var(--dblue);
+            }
+        }
+        #f2{
+            @include lg{
+                border: 0px 164px 0px 0px;}
+            h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
+                padding: 0px 0px 12px 0px;
+            }
+            grid-area: f2;
+            form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    padding: 16px 24px;
+                    box-sizing: border-box;
+                    color: var(--blue);
+                    background-color: var(--lblue);
+                    font-weight: 600;
+                    font-size: rem-calc(14);
+                    line-height: 17px;
+                    font-style: italic;
+                }
+                #button{ 
+                    text-align: right;
+                    button{
+                        border: none;
+                        margin-top: 16px;
+                    }
+                }
+                
+            }
+        }
+        #f3{
+            h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
+                padding: 0px 0px 12px 0px;
+            }
+            grid-area: f3;
+            ul{
+                display: flex;
+                #spacing{
+                    padding:0px 16px 0px 0px;
+                }
+            }
+            
+        }
+    }
+}

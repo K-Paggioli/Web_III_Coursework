@@ -1,0 +1,68 @@
+/* =============
+    Base
+============= */
+
+body{
+    background-color: #FFFCF4;
+}
+
+.content-space-top{
+    margin-top: 16px;
+
+    @include md{
+        margin-top: 24px;
+    }
+    @include lg{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+a{
+  text-decoration: none;  
+}
+
+address{
+    text-decoration: none; 
+}
+.test-imgs{
+    width: 100%;
+}
+
+.show-large{
+    display:none;
+    @include lg{
+        display: block;
+    }
+}
+
+.show-med{
+    display:none;
+    @include sm{
+        display: block;
+    }
+}
+
+.show-small{
+    display: block;
+    @include sm{
+        display:none;
+    }
+}
+
+.show-extra-large{
+    display:none;
+    @include xxl{
+        display: block;
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+.button-spacing{
+    padding: 4px 16px;
+}
