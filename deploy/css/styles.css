@@ -765,6 +765,24 @@ footer > div #f3 ul #spacing {
 #carda .subhero-card aside {
   margin-left: auto;
 }
+#carda .subhero-card aside #abt-img-contain {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 5px solid white;
+}
+#carda .subhero-card aside #abt-img-contain #abt-img-1 {
+  background-image: url("../img/Cards/GoldFinchUSE.jpg");
+  background-size: cover;
+  background-position: right;
+  width: 113px;
+  height: 113px;
+}
+#carda .subhero-card aside #abt-img-contain #abt-img-2 {
+  background-image: url("../img/Cards/Blue-JayUSE.jpg");
+  background-size: cover;
+  width: 113px;
+  height: 113px;
+}
 
 /* =============
     Card 2
