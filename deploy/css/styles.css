@@ -811,6 +811,19 @@ footer > div #f3 ul #spacing {
 }
 #carda .subhero-card h1 {
   font-weight: 600;
+  line-height: 25px;
+  font-size: 1.5625rem;
+}
+@media (min-width: 768px) {
+  #carda .subhero-card h1 {
+    line-height: 30px;
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #carda .subhero-card h1 {
+    font-size: 1.9375rem;
+  }
 }
 #carda .subhero-card a:link, #carda .subhero-card a:visited {
   margin-top: 8px;
