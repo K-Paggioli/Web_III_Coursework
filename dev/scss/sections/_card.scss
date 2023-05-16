@@ -157,8 +157,17 @@
         }
 
         #n1{
+            font-weight: 600;
+            font-size: rem-calc(20);
+            line-height: 24px;
+
             @include md{
                 grid-area: n1;
+            }
+
+            @include xl{
+                font-size: rem-calc(37);
+                line-height: 44px;
             }
         }
         #n2{  
