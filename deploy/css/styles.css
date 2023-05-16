@@ -342,6 +342,19 @@ body {
   background-color: #FFFCF4;
 }
 
+.content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-space-top {
+  }
+}
+
 .test-imgs {
   width: 100%;
 }
@@ -405,6 +418,13 @@ h1 h2 h3 h4 h5 h6 p {
 /* =============
     Buttons
 ============= */
+.orange-button {
+  background-color: var(--orange);
+  color: white;
+  padding: 16px 24px;
+  display: inline-block;
+}
+
 /* =============
     Forms
 ============= */
@@ -431,7 +451,6 @@ textarea {
 ============= */
 header {
   background-color: var(--cream);
-  box-shadow: 0px 4px 10px gray;
   /* =========================
   effect-style: Header Shadow
   Effect: Drop shadow
@@ -443,6 +462,8 @@ header #logo {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo .";
+  position: sticky;
+  box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
 }
 header #logo > div {
   grid-area: logo;
@@ -701,36 +722,28 @@ footer > div #f3 ul #spacing {
 #carda > div {
   display: grid;
   gap: 16px;
-  margin: 16px 0px 24px 0px;
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
   #carda > div {
     grid-area: cards-below-hero;
     grid-template-columns: 50% auto;
-    margin: 24px 0px 40px 0px;
     box-sizing: border-box;
   }
 }
-#carda aside {
+#carda .subhero-card {
   background-color: var(--sage);
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
   color: var(--dblue);
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". carda .";
-  padding: 16px 0px 24px 0px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
 }
-#carda aside > div {
-  grid-area: carda;
-  display: grid;
-  grid-template-columns: 70% auto;
+#carda .subhero-card a {
+  margin-top: 8px;
 }
-#carda aside a {
-  background-color: var(--orange);
-  color: white;
-  padding: 16px 24px;
-  margin: 12px 0px;
-  box-sizing: border-box;
+#carda .subhero-card aside {
+  margin-left: auto;
 }
 
 /* =============
@@ -765,24 +778,21 @@ footer > div #f3 ul #spacing {
     grid-template-areas: "n1 n1 n1 n1 n1 n1" "n2 n2 n3 n3 n4 n4" ".. n5 n5 n6 n6 ..";
   }
 }
+#cardb > div section img {
+  font-size: 0;
+  display: block;
+}
 #cardb > div section .card-data {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cardb .";
   background-color: var(--sage);
   color: var(--dblue);
-  padding: 0px 16px 40px 16px;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
+  padding: 16px 0;
 }
 #cardb > div section .card-data > div {
   grid-area: cardb;
-}
-#cardb > div section .card-data > div p {
-  padding: 0px 0px 24px 0px;
-}
-#cardb > div section .card-data > div a {
-  background-color: var(--orange);
-  color: white;
-  padding: 16px 24px;
 }
 @media (min-width: 768px) {
   #cardb > div #n1 {
