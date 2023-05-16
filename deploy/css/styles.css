@@ -361,6 +361,10 @@ a {
   text-decoration: none;
 }
 
+address {
+  text-decoration: none;
+}
+
 .test-imgs {
   width: 100%;
 }
@@ -578,8 +582,25 @@ footer > div {
 footer > div #f1 {
   grid-area: f1;
 }
+footer > div #f1 h3 {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
+}
+footer > div #f1 ul li h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 19px;
+}
 footer > div #f1 ul li section {
   display: flex;
+}
+footer > div #f1 ul li section address {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 14px;
+  margin-bottom: 8px;
+  margin-top: -12px;
 }
 footer > div #f1 ul li section a:link, footer > div #f1 ul li section a:visited {
   color: var(--dblue);
@@ -590,6 +611,8 @@ footer > div #f1 ul li section a:link:hover, footer > div #f1 ul li section a:li
 }
 footer > div #f1 ul li section img {
   margin-right: 16px;
+  margin-bottom: 8px;
+  margin-top: -12px;
 }
 footer > div #f1 a {
   color: var(--dblue);
@@ -603,6 +626,9 @@ footer > div #f2 {
   }
 }
 footer > div #f2 h3 {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
   padding: 0px 0px 12px 0px;
 }
 footer > div #f2 form {
@@ -629,6 +655,9 @@ footer > div #f3 {
   grid-area: f3;
 }
 footer > div #f3 h3 {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
   padding: 0px 0px 12px 0px;
 }
 footer > div #f3 ul {

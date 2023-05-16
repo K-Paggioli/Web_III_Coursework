@@ -47,13 +47,28 @@ footer{
         #f1{
             grid-area: f1;
             h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
+
             }
             ul{
                 li{
+                    h4{
+                        font-weight: 600;
+                        font-size: rem-calc(16);
+                        line-height: 19px;
+                    }
                     section{
                         display: flex;
 
                         address{ 
+                            font-weight: 400; 
+                            font-size: rem-calc(12);
+                            line-height: 14px;
+                            margin-bottom: 8px;
+                            margin-top: -12px;
+                    
                         }
                         a:link, a:visited{
                             color: var(--dblue);
@@ -65,6 +80,8 @@ footer{
                             }
                         img{
                             margin-right: 16px;
+                            margin-bottom: 8px;
+                            margin-top: -12px;
                         }
                     }
                     
@@ -78,6 +95,9 @@ footer{
             @include lg{
                 border: 0px 164px 0px 0px;}
             h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
                 padding: 0px 0px 12px 0px;
             }
             grid-area: f2;
@@ -105,6 +125,9 @@ footer{
         }
         #f3{
             h3{
+                font-weight: 600;
+                line-height: 24px;
+                font-size: rem-calc(20);
                 padding: 0px 0px 12px 0px;
             }
             grid-area: f3;
