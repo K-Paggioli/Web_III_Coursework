@@ -906,6 +906,16 @@ footer > div #f3 ul #spacing {
 #cardb > div section .card-data > div {
   grid-area: cardb;
 }
+#cardb > div section .card-data > div h2 {
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 1.6875rem;
+}
+#cardb > div section .card-data > div p {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
+}
 #cardb > div section .card-data > div a:link, #cardb > div section .card-data > div a:visited {
   color: white;
 }
