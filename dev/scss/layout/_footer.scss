@@ -80,8 +80,15 @@ footer{
                             }
                         img{
                             margin-right: 16px;
+                        }
+
+                        #pin{
                             margin-bottom: 8px;
                             margin-top: -12px;
+                        }
+
+                        #phone{
+
                         }
                     }
                     
@@ -112,6 +119,10 @@ footer{
                     box-sizing: border-box;
                     color: var(--blue);
                     background-color: var(--lblue);
+                    font-weight: 600;
+                    font-size: rem-calc(14);
+                    line-height: 17px;
+                    font-style: italic;
                 }
                 #button{ 
                     text-align: right;

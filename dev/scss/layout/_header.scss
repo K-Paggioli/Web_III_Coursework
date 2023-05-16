@@ -59,6 +59,7 @@ header{
                 grid-template-areas: 
                 "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
                 =========*/
+
                 
                 #s1{ 
                     color: var(--dblue);
@@ -69,6 +70,20 @@ header{
                     border-bottom: 2px solid var(--gold);
                     box-sizing: border-box;
                     grid-area: s1;
+                    font-weight: 200;
+                    font-style: italic;
+                    font-size: rem-calc(14);
+                    line-height: 17px;
+
+                    @include md{
+                        font-size: rem-calc(30);
+                        line-height: 30px;
+                    }
+
+                    @include xl{
+                        font-size: rem-calc(35);
+                        line-height: 42px;
+                    }
 
                 }
                 #s2{
