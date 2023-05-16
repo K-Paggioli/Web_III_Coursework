@@ -416,6 +416,10 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 h1 h2 h3 h4 h5 h6 p {
   margin: 0;
   padding: 0;
@@ -637,6 +641,9 @@ footer > div #f3 ul #spacing {
 /* =============
     Hero
 ============= */
+#hero {
+  text-align: left;
+}
 #hero img {
   font-size: 0;
   display: block;
@@ -667,6 +674,28 @@ footer > div #f3 ul #spacing {
   background-color: var(--orange);
   color: white;
 }
+#hero #hero-cards #hero-bottom-left h1 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+@media (min-width: 1200px) {
+  #hero #hero-cards #hero-bottom-left h1 {
+    font-size: 1.5625rem;
+  }
+}
+#hero #hero-cards #hero-bottom-left p {
+  font-weight: 400;
+  font-style: italic;
+  line-height: 20px;
+  font-size: 0.875rem;
+  margin-top: -8px;
+}
+@media (min-width: 1200px) {
+  #hero #hero-cards #hero-bottom-left p {
+    font-size: 1rem;
+  }
+}
 #hero #hero-cards #hero-bottom-left aside {
   margin-left: auto;
 }
@@ -691,6 +720,29 @@ footer > div #f3 ul #spacing {
 #hero #hero-cards #hero-bottom-right {
   background-color: var(--gold);
   color: white;
+}
+#hero #hero-cards #hero-bottom-right p {
+  font-weight: 400;
+  line-height: 19.2px;
+  font-size: 1rem;
+}
+#hero #hero-cards #hero-bottom-right p span {
+  font-weight: 600;
+}
+#hero #hero-cards #hero-bottom-right #line2 {
+  font-style: italic;
+  margin-top: -12px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  #hero #hero-cards #hero-bottom-right #line2 {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-cards #hero-bottom-right #line2 {
+    margin-bottom: 12px;
+  }
 }
 #hero #hero-cards #hero-bottom-right aside {
   margin-left: auto;
@@ -722,6 +774,9 @@ footer > div #f3 ul #spacing {
 /* =============
     Card 
 ============= */
+#carda {
+  text-align: left;
+}
 @media (min-width: 768px) {
   #carda {
     display: grid;
@@ -753,6 +808,9 @@ footer > div #f3 ul #spacing {
   padding: 16px;
   display: flex;
   align-items: center;
+}
+#carda .subhero-card h1 {
+  font-weight: 600;
 }
 #carda .subhero-card a:link, #carda .subhero-card a:visited {
   margin-top: 8px;

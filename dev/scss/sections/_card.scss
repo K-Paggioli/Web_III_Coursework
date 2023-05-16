@@ -2,6 +2,7 @@
     Card 
 ============= */
 #carda{
+    text-align: left; 
     @include md{
         display: grid;
         grid-template-columns:16px auto 16px;
@@ -28,6 +29,10 @@
         padding: 16px;
         display: flex;
         align-items: center;
+
+        h1{
+            font-weight: 600;
+        }
 
         a:link, a:visited{
             margin-top: 8px;
