@@ -34,14 +34,19 @@
             color: white;
             aside{
                margin-left: auto;
-               a{
+               a:link, a:visited{
                     display: flex;
-                } 
-               /* img{
+                    color: white;
+                    
+                        &:hover, &:active{
+                            color: var(--lblue);
+                            transition: 0.25s;
+                        }
+                    }
+               img{
                     display: block;
-                    margin-left: auto;
                     padding: 0px 8px;
-                } */
+                }
             } 
             @include xxl{
                 display: grid;
@@ -52,15 +57,20 @@
             background-color: var(--gold);
             color: white;
             aside{
-                margin-left:auto;
-                a{
-                    display: flex;
-                }
-                /* img{
-                    display:block;
-                    margin-left: auto;
-                    padding: 0px 8px;
-                } */
+                margin-left: auto;
+                a:link, a:visited{
+                     display: flex;
+                     color: white;
+                     
+                         &:hover, &:active{
+                             color: var(--lblue);
+                             transition: 0.25s;
+                         }
+                     }
+                img{
+                     display: block;
+                     padding: 0px 8px;
+                 }
             }
             
             @include md{

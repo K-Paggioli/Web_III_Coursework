@@ -55,8 +55,14 @@ footer{
 
                         address{ 
                         }
-                        a{
-                        }
+                        a:link, a:visited{
+                            color: var(--dblue);
+                            
+                                &:hover, &:active{
+                                    color: white;
+                                    transition: 0.25s;
+                                }
+                            }
                         img{
                             margin-right: 16px;
                         }

@@ -357,6 +357,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .test-imgs {
   width: 100%;
 }
@@ -425,6 +429,7 @@ h1 h2 h3 h4 h5 h6 p {
   color: white;
   padding: 16px 24px;
   display: inline-block;
+  border-radius: 14px;
 }
 
 /* =============
@@ -572,6 +577,13 @@ footer > div #f1 {
 footer > div #f1 ul li section {
   display: flex;
 }
+footer > div #f1 ul li section a:link, footer > div #f1 ul li section a:visited {
+  color: var(--dblue);
+}
+footer > div #f1 ul li section a:link:hover, footer > div #f1 ul li section a:link:active, footer > div #f1 ul li section a:visited:hover, footer > div #f1 ul li section a:visited:active {
+  color: white;
+  transition: 0.25s;
+}
 footer > div #f1 ul li section img {
   margin-right: 16px;
 }
@@ -657,14 +669,18 @@ footer > div #f3 ul #spacing {
 }
 #hero #hero-cards #hero-bottom-left aside {
   margin-left: auto;
-  /* img{
-       display: block;
-       margin-left: auto;
-       padding: 0px 8px;
-   } */
 }
-#hero #hero-cards #hero-bottom-left aside a {
+#hero #hero-cards #hero-bottom-left aside a:link, #hero #hero-cards #hero-bottom-left aside a:visited {
   display: flex;
+  color: white;
+}
+#hero #hero-cards #hero-bottom-left aside a:link:hover, #hero #hero-cards #hero-bottom-left aside a:link:active, #hero #hero-cards #hero-bottom-left aside a:visited:hover, #hero #hero-cards #hero-bottom-left aside a:visited:active {
+  color: var(--lblue);
+  transition: 0.25s;
+}
+#hero #hero-cards #hero-bottom-left aside img {
+  display: block;
+  padding: 0px 8px;
 }
 @media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-left {
@@ -678,14 +694,18 @@ footer > div #f3 ul #spacing {
 }
 #hero #hero-cards #hero-bottom-right aside {
   margin-left: auto;
-  /* img{
-      display:block;
-      margin-left: auto;
-      padding: 0px 8px;
-  } */
 }
-#hero #hero-cards #hero-bottom-right aside a {
+#hero #hero-cards #hero-bottom-right aside a:link, #hero #hero-cards #hero-bottom-right aside a:visited {
   display: flex;
+  color: white;
+}
+#hero #hero-cards #hero-bottom-right aside a:link:hover, #hero #hero-cards #hero-bottom-right aside a:link:active, #hero #hero-cards #hero-bottom-right aside a:visited:hover, #hero #hero-cards #hero-bottom-right aside a:visited:active {
+  color: var(--lblue);
+  transition: 0.25s;
+}
+#hero #hero-cards #hero-bottom-right aside img {
+  display: block;
+  padding: 0px 8px;
 }
 @media (min-width: 768px) {
   #hero #hero-cards #hero-bottom-right {
@@ -734,8 +754,13 @@ footer > div #f3 ul #spacing {
   display: flex;
   align-items: center;
 }
-#carda .subhero-card a {
+#carda .subhero-card a:link, #carda .subhero-card a:visited {
   margin-top: 8px;
+  color: white;
+}
+#carda .subhero-card a:link:hover, #carda .subhero-card a:link:active, #carda .subhero-card a:visited:hover, #carda .subhero-card a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
 }
 #carda .subhero-card aside {
   margin-left: auto;
@@ -788,6 +813,13 @@ footer > div #f3 ul #spacing {
 }
 #cardb > div section .card-data > div {
   grid-area: cardb;
+}
+#cardb > div section .card-data > div a:link, #cardb > div section .card-data > div a:visited {
+  color: white;
+}
+#cardb > div section .card-data > div a:link:hover, #cardb > div section .card-data > div a:link:active, #cardb > div section .card-data > div a:visited:hover, #cardb > div section .card-data > div a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   #cardb > div #n1 {

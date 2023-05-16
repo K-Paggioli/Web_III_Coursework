@@ -29,9 +29,15 @@
         display: flex;
         align-items: center;
 
-        a{
+        a:link, a:visited{
             margin-top: 8px;
-        }
+            color: white;
+            
+                &:hover, &:active{
+                    background-color: var(--gold);
+                    transition: 0.25s;
+                }
+            }
         
         aside{
             margin-left: auto;
@@ -88,8 +94,14 @@
                     grid-area: cardb;
                     p{
                     }
-                    a{
-                    }
+                    a:link, a:visited{
+                        color: white;
+                        
+                            &:hover, &:active{
+                                background-color: var(--gold);
+                                transition: 0.25s;
+                            }
+                        }
                 }
             }
         }
