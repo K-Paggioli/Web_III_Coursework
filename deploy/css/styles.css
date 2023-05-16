@@ -769,6 +769,9 @@ footer > div #f3 ul #spacing {
 /* =============
     Card 2
 ============= */
+#cardb {
+  background-color: none;
+}
 @media (min-width: 768px) {
   #cardb {
     display: grid;
@@ -907,16 +910,32 @@ footer > div #f3 ul #spacing {
   background-image: url("../img/Heroes/BarredUSE.jpg");
   background-size: cover;
   height: 482px;
-  background-position: center bottom;
-  margin-bottom: 116px;
+  background-position: center top;
+}
+@media (min-width: 768px) {
+  #gallery ul #g2 {
+    height: 609px;
+    background-position: center bottom;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery ul #g2 {
+    height: 626px;
+  }
 }
 @media (min-width: 1440px) {
   #gallery ul #g2 {
     grid-area: g2;
+    height: 418px;
+    background-position: center top;
   }
 }
 @media (min-width: 1440px) {
   #gallery ul #g3 {
     grid-area: g3;
+    background-image: url("../img/Heroes/GBHeronUSE.jpg");
+    background-size: cover;
+    height: 413px;
+    background-position: center top;
   }
 }

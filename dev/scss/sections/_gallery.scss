@@ -48,16 +48,31 @@
             background-image: url("../img/Heroes/BarredUSE.jpg");
             background-size: cover;
             height: 482px; 
-            background-position: center bottom;
-            margin-bottom: 116px;
+            background-position: center top;
+
+            @include md{
+                height: 609px;
+                background-position: center bottom;
+            }
+
+            @include xl{
+                height: 626px;
+            }
 
             @include xxl{
                 grid-area: g2;
+                height: 418px;
+                background-position: center top;
             }
         }
         #g3{
+           
             @include xxl{
                 grid-area: g3;
+                background-image: url("../img/Heroes/GBHeronUSE.jpg");
+                background-size: cover;
+                height: 413px; 
+                background-position: center top;
             }
         }
     }
