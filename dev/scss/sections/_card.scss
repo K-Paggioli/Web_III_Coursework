@@ -86,24 +86,6 @@
                 display: block;
             }
 
-            #image-one{
-                background-image: url("../img/Cards/TuftedUSE.jpg");
-                background-size: cover;
-                height: 165px; 
-                background-position: center; 
-                
-                @include md{
-                    height: 185px;
-                    background-position: center;
-                }
-                
-                @include xl{
-                    height: 164px;
-                    background-position: center;
-                }
-
-            }
-
             .card-data{
                 display: grid;
                 grid-template-columns: 16px auto 16px;
@@ -133,29 +115,102 @@
                 grid-area: n1;
             }
         }
-        #n2{   
+        #n2{  
             @include md{
                 grid-area: n2;
+            }
+            aside{
+                background-image: url("../img/Cards/TuftedUSE.jpg");
+                background-size: cover;
+                height: 185px; 
+                background-position: center;  
+                @include xl{
+                    height: 164px;
+                     background-position: center;
+                    }
+                @include xxl{
+                    height: 164px;
+                    background-position: center;
+                     }
             }
         }
         #n3{
             @include md{
                 grid-area: n3;
             }
+            aside{
+                background-image: url("../img/Cards/CrowUSE.jpg");
+                background-size: cover;
+                height: 185px; 
+                background-position: top center;  
+                @include xl{
+                    height: 164px;
+                     background-position: top center;
+                    }
+                @include xxl{
+                    height: 164px;
+                    background-position: top center;
+                         }
+            }
+         
+            
         }
         #n4{
             @include md{
                 grid-area: n4;
+            }
+            aside{
+                background-image: url("../img/Cards/BarnOwlUSE.jpg");
+                background-size: cover;
+                height: 185px; 
+                background-position: center;  
+                @include xl{
+                    height: 164px;
+                     background-position: center;
+                    }
+                @include xxl{
+                    height: 164px;
+                    background-position: center;
+                     }
             }
         }
         #n5{
             @include md{
                 grid-area: n5;
             }
+            aside{
+                background-image: url("../img/Cards/LoonUSE.jpg");
+                background-size: cover;
+                height: 185px; 
+                background-position: center;  
+                @include xl{
+                    height: 164px;
+                     background-position: center;
+                    }
+                @include xxl{
+                    height: 164px;
+                    background-position: center;
+                     }
+            }
         }
         #n6{
             @include md{
                 grid-area: n6;
+            }
+
+            aside{
+                background-image: url("../img/Cards/HawkUSE.jpg");
+                background-size: cover;
+                height: 185px; 
+                background-position: center;  
+                @include xl{
+                    height: 164px;
+                     background-position: center;
+                    }
+                @include xxl{
+                    height: 164px;
+                    background-position: center;
+                     }
             }
         }
     }

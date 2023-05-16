@@ -805,24 +805,6 @@ footer > div #f3 ul #spacing {
   font-size: 0;
   display: block;
 }
-#cardb > div section #image-one {
-  background-image: url("../img/Cards/TuftedUSE.jpg");
-  background-size: cover;
-  height: 165px;
-  background-position: center;
-}
-@media (min-width: 768px) {
-  #cardb > div section #image-one {
-    height: 185px;
-    background-position: center;
-  }
-}
-@media (min-width: 1200px) {
-  #cardb > div section #image-one {
-    height: 164px;
-    background-position: center;
-  }
-}
 #cardb > div section .card-data {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -852,9 +834,45 @@ footer > div #f3 ul #spacing {
     grid-area: n2;
   }
 }
+#cardb > div #n2 aside {
+  background-image: url("../img/Cards/TuftedUSE.jpg");
+  background-size: cover;
+  height: 185px;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #cardb > div #n2 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  #cardb > div #n2 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
 @media (min-width: 768px) {
   #cardb > div #n3 {
     grid-area: n3;
+  }
+}
+#cardb > div #n3 aside {
+  background-image: url("../img/Cards/CrowUSE.jpg");
+  background-size: cover;
+  height: 185px;
+  background-position: top center;
+}
+@media (min-width: 1200px) {
+  #cardb > div #n3 aside {
+    height: 164px;
+    background-position: top center;
+  }
+}
+@media (min-width: 1440px) {
+  #cardb > div #n3 aside {
+    height: 164px;
+    background-position: top center;
   }
 }
 @media (min-width: 768px) {
@@ -862,14 +880,68 @@ footer > div #f3 ul #spacing {
     grid-area: n4;
   }
 }
+#cardb > div #n4 aside {
+  background-image: url("../img/Cards/BarnOwlUSE.jpg");
+  background-size: cover;
+  height: 185px;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #cardb > div #n4 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  #cardb > div #n4 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
 @media (min-width: 768px) {
   #cardb > div #n5 {
     grid-area: n5;
   }
 }
+#cardb > div #n5 aside {
+  background-image: url("../img/Cards/LoonUSE.jpg");
+  background-size: cover;
+  height: 185px;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #cardb > div #n5 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  #cardb > div #n5 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
 @media (min-width: 768px) {
   #cardb > div #n6 {
     grid-area: n6;
+  }
+}
+#cardb > div #n6 aside {
+  background-image: url("../img/Cards/HawkUSE.jpg");
+  background-size: cover;
+  height: 185px;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #cardb > div #n6 aside {
+    height: 164px;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  #cardb > div #n6 aside {
+    height: 164px;
+    background-position: center;
   }
 }
 
