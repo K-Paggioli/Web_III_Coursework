@@ -79,10 +79,31 @@
             ".. n5 n5 n6 n6 ..";
         }
         section{
+            
+
             img{
                 font-size: 0;
                 display: block;
             }
+
+            #image-one{
+                background-image: url("../img/Cards/TuftedUSE.jpg");
+                background-size: cover;
+                height: 165px; 
+                background-position: center; 
+                
+                @include md{
+                    height: 185px;
+                    background-position: center;
+                }
+                
+                @include xl{
+                    height: 164px;
+                    background-position: center;
+                }
+
+            }
+
             .card-data{
                 display: grid;
                 grid-template-columns: 16px auto 16px;
@@ -112,7 +133,7 @@
                 grid-area: n1;
             }
         }
-        #n2{
+        #n2{   
             @include md{
                 grid-area: n2;
             }
@@ -140,3 +161,20 @@
     }
     
 }
+
+
+/*background-image: url("../img/Cards/TuftedUSE.jpg");
+background-size: cover;
+height: 165px; 
+background-position: center; 
+
+@include md{
+    height: 185px;
+    background-position: center;
+}
+
+@include xl{
+    height: 164px;
+    background-position: center;
+}
+*/
