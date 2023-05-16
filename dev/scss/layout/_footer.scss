@@ -28,14 +28,19 @@ footer{
         }
 
         @include lg{
-            /*===========
-            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-columns: repeat(5, 1fr);
             grid-template-areas:
-            "f1 f2 f3"; 
-            gap:24px; 
+            "f1 f2 f2 f2 f3"; 
+            gap: 72px; 
+            align-content: center;
+
+            /* display:flex;           
+            justify-content: space-between; 
+            both solutions have problems; this one makes input small, other has it not align center
             */
-            display:flex;
-            justify-content: space-between;
+
+            
             
         }
         

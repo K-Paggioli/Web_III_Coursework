@@ -352,6 +352,8 @@ body {
 }
 @media (min-width: 1024px) {
   .content-space-top {
+    margin-top: 30px;
+    margin-left: 0;
   }
 }
 
@@ -547,7 +549,6 @@ footer > div {
 }
 @media (min-width: 768px) {
   footer > div {
-    padding: 24px 0px 40px 0px;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "f1 f2" "f1 f3";
@@ -555,31 +556,24 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
-    padding: 48px 0px 50px 0px;
-    /*===========
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "f1 f2 f3"; 
-    gap:24px; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "f1 f2 f2 f2 f3";
+    gap: 72px;
+    align-content: center;
+    /* display:flex;           
+    justify-content: space-between; 
+    both solutions have problems; this one makes input small, other has it not align center
     */
-    display: flex;
-    justify-content: space-between;
   }
 }
 footer > div #f1 {
   grid-area: f1;
 }
-footer > div #f1 h3 {
-  padding: 0px 0px 12px 0px;
+footer > div #f1 ul li section {
+  display: flex;
 }
-footer > div #f1 ul li address {
-  padding: 0px 0px 24px 0px;
-}
-footer > div #f1 ul li a {
-  padding: 0px 0px 24px 0px;
-}
-footer > div #f1 ul li img {
-  padding: 0px 8px;
+footer > div #f1 ul li section img {
+  margin-right: 16px;
 }
 footer > div #f1 a {
   color: var(--dblue);
@@ -602,17 +596,18 @@ footer > div #f2 form {
 footer > div #f2 form input {
   width: 100%;
   border: none;
+  border-radius: 0;
   padding: 16px 24px;
   box-sizing: border-box;
   color: var(--blue);
   background-color: var(--lblue);
 }
-footer > div #f2 form button {
+footer > div #f2 form #button {
+  text-align: right;
+}
+footer > div #f2 form #button button {
   border: none;
-  padding: 4px 16px;
-  margin: 24px 0px 0px auto;
-  background-color: var(--orange);
-  color: white;
+  margin-top: 16px;
 }
 footer > div #f3 {
   grid-area: f3;
