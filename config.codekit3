@@ -976,6 +976,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Footer\/footerBG_EXP_USE.jpg" : {
+      "ft" : 16384,
+      "iS" : 12977,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Footer\/footerBG_EXP_USE.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Footer\/footerBG_USE.jpg" : {
+      "ft" : 16384,
+      "iS" : 31426,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Footer\/footerBG_USE.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Footer\/Instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
