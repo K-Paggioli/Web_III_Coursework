@@ -16,3 +16,21 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+
+
+::placeholder{
+    color: var(--blue);
+    opacity: 1;
+    font-style: italic;
+}
+
+:-ms-input-placeholder
+{
+    color: var(--blue);
+    font-style: italic;
+}
+
+::-ms-input-placeholder {
+    color: var(--blue);
+    font-style: italic;
+}

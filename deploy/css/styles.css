@@ -461,6 +461,22 @@ textarea {
   -webkit-appearance: none;
 }
 
+::placeholder {
+  color: var(--blue);
+  opacity: 1;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  color: var(--blue);
+  font-style: italic;
+}
+
+::-ms-input-placeholder {
+  color: var(--blue);
+  font-style: italic;
+}
+
 /* =============
     Navigation
 ============= */
@@ -497,6 +513,7 @@ header #logo img {
 }
 header #logo nav img {
   margin: 16px 0px;
+  cursor: pointer;
 }
 @media (min-width: 576px) {
   header #logo nav img {
@@ -538,7 +555,6 @@ header #logo nav img {
   box-sizing: border-box;
   grid-area: s1;
   font-weight: 200;
-  font-style: italic;
   font-size: 0.875rem;
   line-height: 17px;
 }
@@ -558,6 +574,7 @@ header #logo nav img {
   grid-area: s2;
   border: none;
   background-color: var(--cream);
+  cursor: pointer;
 }
 /* =============
     Footer
@@ -634,6 +651,10 @@ footer > div #f1 ul li section img {
 footer > div #f1 ul li section #pin {
   margin-bottom: 8px;
   margin-top: -12px;
+  cursor: pointer;
+}
+footer > div #f1 ul li section #phone {
+  cursor: pointer;
 }
 footer > div #f1 a {
   color: var(--dblue);
@@ -660,7 +681,7 @@ footer > div #f2 form input {
   width: 100%;
   border: none;
   border-radius: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   box-sizing: border-box;
   color: var(--blue);
   background-color: var(--lblue);
@@ -675,6 +696,7 @@ footer > div #f2 form #button {
 footer > div #f2 form #button button {
   border: none;
   margin-top: 16px;
+  cursor: pointer;
 }
 footer > div #f3 {
   grid-area: f3;
