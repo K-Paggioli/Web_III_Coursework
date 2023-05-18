@@ -575,6 +575,14 @@ header #logo nav img {
   border: none;
   background-color: var(--cream);
   cursor: pointer;
+  /*transition: .25s;
+  padding: 8px 8px 4px 8px;
+  border-radius: 8px;
+  margin: 4px;
+
+  &:hover{
+      background-color: var(--lblue);
+  }*/
 }
 /* =============
     Footer
@@ -697,6 +705,10 @@ footer > div #f2 form #button button {
   border: none;
   margin-top: 16px;
   cursor: pointer;
+  transition: 0.25s;
+}
+footer > div #f2 form #button button:hover {
+  background-color: var(--dblue);
 }
 footer > div #f3 {
   grid-area: f3;

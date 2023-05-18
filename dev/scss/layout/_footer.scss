@@ -132,6 +132,10 @@ footer{
                         border: none;
                         margin-top: 16px;
                         cursor: pointer;
+                        transition: .25s;
+                        &:hover{
+                            background-color: var(--dblue);
+                        }
                     }
                 }
                 
