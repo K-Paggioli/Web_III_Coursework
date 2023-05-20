@@ -485,12 +485,6 @@ textarea {
 ============= */
 header {
   background-color: var(--cream);
-  /* =========================
-  effect-style: Header Shadow
-  Effect: Drop shadow
-  Radius: 10px
-  Offset: 0px, 4px
-  ===========================*/
 }
 header #logo {
   display: grid;
@@ -511,13 +505,15 @@ header #logo > div {
 header #logo img {
   padding: 16px 0px;
 }
-header #logo nav img {
-  margin: 16px 0px;
+header #logo nav {
+  margin: 28px 0px;
+  font-size: 2.5rem;
+  color: var(--orange);
   cursor: pointer;
 }
 @media (min-width: 576px) {
-  header #logo nav img {
-    margin: 32px 0px;
+  header #logo nav {
+    margin: 36px 0px;
   }
 }
 
@@ -574,16 +570,23 @@ header #logo nav img {
   grid-area: s2;
   border: none;
   background-color: var(--cream);
+  color: var(--orange);
   cursor: pointer;
-  /*transition: .25s;
-  padding: 8px 8px 4px 8px;
+  font-size: 2rem;
+  transition: 0.25s;
+  padding: 8px 0px 4px 8px;
   border-radius: 8px;
   margin: 4px;
-
-  &:hover{
-      background-color: var(--lblue);
-  }*/
 }
+#form-content > div form #s2:hover {
+  color: var(--gold);
+}
+@media (min-width: 768px) {
+  #form-content > div form #s2 {
+    font-size: 3rem;
+  }
+}
+
 /* =============
     Footer
 ============= */

@@ -3,13 +3,6 @@
 ============= */
 header{
     background-color: var(--cream);
-    
-    /* =========================
-    effect-style: Header Shadow
-    Effect: Drop shadow
-    Radius: 10px
-    Offset: 0px, 4px
-    ===========================*/
     #logo{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -29,13 +22,14 @@ header{
                 padding:16px 0px;
             }
             nav{
-                img{
-                    margin: 16px 0px;
+                    margin: 28px 0px;
+                    font-size: rem-calc(40);
+                    color: var(--orange);
                     cursor: pointer;
+
                     @include sm{
-                        margin:32px 0px;
-                    } 
-                }
+                        margin: 36px 0px;
+                    }
             }
             
         }
@@ -90,17 +84,20 @@ header{
                     grid-area: s2;
                     border: none;
                     background-color: var(--cream);
+                    color: var(--orange);
                     cursor: pointer;
-                    /*transition: .25s;
-                    padding: 8px 8px 4px 8px;
+                    font-size: rem-calc(32);
+                    transition: .25s;
+                    padding: 8px 0px 4px 8px;
                     border-radius: 8px;
                     margin: 4px;
 
                     &:hover{
-                        background-color: var(--lblue);
-                    }*/
-                    img{
-                        
+                        color: var(--gold);
+                    }
+
+                    @include md{
+                        font-size: rem-calc(48);
                     }
                 }
             } 
