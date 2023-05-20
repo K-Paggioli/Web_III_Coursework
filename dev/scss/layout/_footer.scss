@@ -1,6 +1,10 @@
 /* =============
     Footer
 ============= */
+
+/*#orangebar{
+    background-color: var(--orange);
+}*/
 footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -8,6 +12,8 @@ footer{
     background-color: var(--yellow);
     color: var(--dblue);
     padding: 32px 0px 18px 0px;
+
+    
 
     @include xl{
         grid-template-columns: auto 1168px auto;
@@ -29,9 +35,11 @@ footer{
 
         @include lg{
 
-            grid-template-columns: repeat(5, 1fr);
+            // grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
-            "f1 f2 f2 f2 f3"; 
+            // "f1 f2 f2 f2 f3"; 
+            "f1 f2 f3"; 
             gap: 72px; 
             align-content: center;
 
@@ -142,6 +150,7 @@ footer{
             }
         }
         #f3{
+            text-align: right;
             h3{
                 font-weight: 600;
                 line-height: 24px;
@@ -151,6 +160,7 @@ footer{
             grid-area: f3;
             ul{
                 display: flex;
+                justify-content: flex-end;
                 #spacing{
                     padding:0px 16px 0px 0px;
                 }

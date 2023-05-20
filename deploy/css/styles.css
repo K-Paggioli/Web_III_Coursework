@@ -587,6 +587,9 @@ header #logo nav img {
 /* =============
     Footer
 ============= */
+/*#orangebar{
+    background-color: var(--orange);
+}*/
 footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -613,8 +616,8 @@ footer > div {
 }
 @media (min-width: 1024px) {
   footer > div {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "f1 f2 f2 f2 f3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
     gap: 72px;
     align-content: center;
     /* display:flex;           
@@ -711,6 +714,7 @@ footer > div #f2 form #button button:hover {
   background-color: var(--dblue);
 }
 footer > div #f3 {
+  text-align: right;
   grid-area: f3;
 }
 footer > div #f3 h3 {
@@ -721,6 +725,7 @@ footer > div #f3 h3 {
 }
 footer > div #f3 ul {
   display: flex;
+  justify-content: flex-end;
 }
 footer > div #f3 ul #spacing {
   padding: 0px 16px 0px 0px;
