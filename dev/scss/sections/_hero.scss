@@ -60,13 +60,14 @@
                     color: white;
                     
                         &:hover, &:active{
-                            color: var(--lblue);
+                            color: var(--dblue);
                             transition: 0.25s;
                         }
                     }
-               img{
+               i{
                     display: block;
                     padding: 0px 8px;
+                    margin-top: 2px;
                 }
             } 
             @include xxl{
@@ -108,13 +109,14 @@
                      color: white;
                      
                          &:hover, &:active{
-                             color: var(--lblue);
+                             color: var(--dblue);
                              transition: 0.25s;
                          }
                      }
-                img{
+                i{
                      display: block;
                      padding: 0px 8px;
+                     margin-top: 2px;
                  }
             }
             

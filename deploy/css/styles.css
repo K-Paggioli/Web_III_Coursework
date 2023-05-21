@@ -823,12 +823,13 @@ footer > div #f3 ul #spacing {
   color: white;
 }
 #hero #hero-cards #hero-bottom-left aside a:link:hover, #hero #hero-cards #hero-bottom-left aside a:link:active, #hero #hero-cards #hero-bottom-left aside a:visited:hover, #hero #hero-cards #hero-bottom-left aside a:visited:active {
-  color: var(--lblue);
+  color: var(--dblue);
   transition: 0.25s;
 }
-#hero #hero-cards #hero-bottom-left aside img {
+#hero #hero-cards #hero-bottom-left aside i {
   display: block;
   padding: 0px 8px;
+  margin-top: 2px;
 }
 @media (min-width: 1440px) {
   #hero #hero-cards #hero-bottom-left {
@@ -871,12 +872,13 @@ footer > div #f3 ul #spacing {
   color: white;
 }
 #hero #hero-cards #hero-bottom-right aside a:link:hover, #hero #hero-cards #hero-bottom-right aside a:link:active, #hero #hero-cards #hero-bottom-right aside a:visited:hover, #hero #hero-cards #hero-bottom-right aside a:visited:active {
-  color: var(--lblue);
+  color: var(--dblue);
   transition: 0.25s;
 }
-#hero #hero-cards #hero-bottom-right aside img {
+#hero #hero-cards #hero-bottom-right aside i {
   display: block;
   padding: 0px 8px;
+  margin-top: 2px;
 }
 @media (min-width: 768px) {
   #hero #hero-cards #hero-bottom-right {
@@ -963,7 +965,6 @@ footer > div #f3 ul #spacing {
 #carda .subhero-card aside #abt-img-contain #abt-img-1 {
   background-image: url("../img/Cards/GoldFinchUSE.jpg");
   background-size: cover;
-  background-position: right;
   width: 113px;
   height: 113px;
 }
@@ -1226,7 +1227,7 @@ background-position: center;
 @media (min-width: 768px) {
   #gallery ul #g1 {
     height: 609px;
-    background-position: center bottom;
+    background-position: 60% bottom;
   }
 }
 @media (min-width: 1200px) {
