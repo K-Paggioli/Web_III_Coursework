@@ -659,15 +659,22 @@ footer > div #f1 ul li section a:link:hover, footer > div #f1 ul li section a:li
   color: white;
   transition: 0.25s;
 }
-footer > div #f1 ul li section img {
+footer > div #f1 ul li section i {
   margin-right: 16px;
+  font-size: 1.375rem;
+  color: var(--orange);
+}
+footer > div #f1 ul li section i:hover {
+  color: var(--cream);
+  transition: 0.25s;
 }
 footer > div #f1 ul li section #pin {
   margin-bottom: 8px;
-  margin-top: -12px;
+  margin-top: -10px;
   cursor: pointer;
 }
 footer > div #f1 ul li section #phone {
+  margin-right: 11px;
   cursor: pointer;
 }
 footer > div #f1 a {
@@ -706,6 +713,7 @@ footer > div #f2 form input {
 }
 footer > div #f2 form #button {
   text-align: right;
+  margin-bottom: 8px;
 }
 footer > div #f2 form #button button {
   border: none;
@@ -724,11 +732,22 @@ footer > div #f3 h3 {
   font-weight: 600;
   line-height: 24px;
   font-size: 1.25rem;
-  padding: 0px 0px 12px 0px;
+  padding: 0px 0px 0px 0px;
 }
 footer > div #f3 ul {
   display: flex;
   justify-content: flex-end;
+  font-size: 1.5rem;
+}
+footer > div #f3 ul li {
+  cursor: pointer;
+}
+footer > div #f3 ul li a:link, footer > div #f3 ul li a:visited {
+  color: var(--orange);
+}
+footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, footer > div #f3 ul li a:visited:hover, footer > div #f3 ul li a:visited:active {
+  color: var(--cream);
+  transition: 0.25s;
 }
 footer > div #f3 ul #spacing {
   padding: 0px 16px 0px 0px;

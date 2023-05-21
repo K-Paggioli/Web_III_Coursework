@@ -86,18 +86,25 @@ footer{
                                     transition: 0.25s;
                                 }
                             }
-                        img{
+                        i{
                             margin-right: 16px;
+                            font-size: rem-calc(22);
+                            color: var(--orange);
+
+                            &:hover{
+                                color: var(--cream);
+                                transition: 0.25s;}
                             
                         }
 
                         #pin{
                             margin-bottom: 8px;
-                            margin-top: -12px;
+                            margin-top: -10px;
                             cursor: pointer;
                         }
 
                         #phone{
+                            margin-right: 11px;
                             cursor: pointer;
                         }
                     }
@@ -136,6 +143,7 @@ footer{
                 }
                 #button{ 
                     text-align: right;
+                    margin-bottom: 8px;
                     button{
                         border: none;
                         margin-top: 16px;
@@ -155,14 +163,28 @@ footer{
                 font-weight: 600;
                 line-height: 24px;
                 font-size: rem-calc(20);
-                padding: 0px 0px 12px 0px;
+                padding: 0px 0px 0px 0px;
             }
             grid-area: f3;
             ul{
                 display: flex;
                 justify-content: flex-end;
+                font-size: rem-calc(24);
+                li{
+                    cursor: pointer;
+                    a:link, a:visited{
+                        color: var(--orange);
+                        
+                            &:hover, &:active{
+                                color: var(--cream);
+                                transition: 0.25s;
+                            }
+                        }
+                       
+                }
                 #spacing{
                     padding:0px 16px 0px 0px;
+
                 }
             }
             
