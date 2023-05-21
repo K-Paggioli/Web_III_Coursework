@@ -26,6 +26,10 @@ header{
                     font-size: rem-calc(40);
                     color: var(--orange);
                     cursor: pointer;
+                    transition: .25s;
+                    &:hover{
+                        color: var(--gold);
+                    }
 
                     @include sm{
                         margin: 36px 0px;
