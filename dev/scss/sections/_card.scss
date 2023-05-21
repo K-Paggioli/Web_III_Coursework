@@ -64,6 +64,7 @@
                 #abt-img-1{
                     background-image: url("../img/Cards/GoldFinchUSE.jpg");
                     background-size: cover;
+                    background-position:100%;
                     width:113px;
                     height: 113px;
 
@@ -165,7 +166,7 @@
             }
 
             @include xl{
-                font-size: rem-calc(37);
+                font-size: rem-calc(32);
                 line-height: 44px;
             }
         }
