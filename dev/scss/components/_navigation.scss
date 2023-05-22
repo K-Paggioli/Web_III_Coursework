@@ -1,3 +1,21 @@
 /* =============
     Navigation
 ============= */
+
+nav{
+display: none;
+    
+    li{
+        a:link, a:visited{
+            display:inline-block;
+            transition: 0.25s;
+            font-weight:600;
+            font-size: rem-calc(18);
+            color: var(--dblue);
+
+            &:hover, &:active{
+                color: var(--gold);
+            }
+        }
+    }
+}

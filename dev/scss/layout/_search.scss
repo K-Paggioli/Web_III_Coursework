@@ -1,0 +1,69 @@
+#form-content{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". forms .";
+    @include xl{
+        grid-template-columns: auto 1168px auto;
+    }
+    >div{
+        grid-area: forms;
+        padding:16px 8px;
+        form{
+            display: flex;
+            justify-content: space-between;
+            /*===========
+            display: grid;
+            grid-template-columns: repeat (16 1fr);
+            grid-template-areas: 
+            "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+            =========*/
+
+            
+            #s1{ 
+                color: var(--dblue);
+                background-color: var(--cream);
+                width:100%;
+                border: none;
+                outline: 0px;
+                border-bottom: 2px solid var(--gold);
+                box-sizing: border-box;
+                grid-area: s1;
+                font-weight: 200;
+                font-size: rem-calc(14);
+                line-height: 17px;
+
+                @include md{
+                    font-size: rem-calc(30);
+                    line-height: 30px;
+                }
+
+                @include xl{
+                    font-size: rem-calc(35);
+                    line-height: 42px;
+                }
+
+            }
+            #s2{
+                grid-area: s2;
+                border: none;
+                background-color: var(--cream);
+                color: var(--orange);
+                cursor: pointer;
+                font-size: rem-calc(32);
+                transition: .25s;
+                padding: 8px 0px 4px 8px;
+                border-radius: 8px;
+                margin: 4px;
+
+                &:hover{
+                    color: var(--gold);
+                }
+
+                @include md{
+                    font-size: rem-calc(48);
+                }
+            }
+        } 
+    }
+    
+}

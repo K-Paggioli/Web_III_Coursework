@@ -480,11 +480,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  display: none;
+}
+nav li a:link, nav li a:visited {
+  display: inline-block;
+  transition: 0.25s;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--dblue);
+}
+nav li a:link:hover, nav li a:link:active, nav li a:visited:hover, nav li a:visited:active {
+  color: var(--gold);
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: var(--cream);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 3px rgba(0, 35, 50, 0.25);
 }
 header #main-header {
   display: grid;
@@ -506,16 +524,17 @@ header #main-header > div {
 }
 header #main-header > div #Logo {
   grid-area: logo;
-}
-header #main-header > div #Logo img {
-  padding: 16px 0px;
+  display: flex;
+  align-items: center;
 }
 header #main-header > div #hamburger-container {
   grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 header #main-header > div #hamburger-container #burger-button {
   border: none;
-  margin: 28px 0px;
   font-size: 2.5rem;
   background-color: var(--cream);
   color: var(--orange);
@@ -525,83 +544,8 @@ header #main-header > div #hamburger-container #burger-button {
 header #main-header > div #hamburger-container #burger-button:hover {
   color: var(--gold);
 }
-@media (min-width: 576px) {
-  header #main-header > div #hamburger-container #burger-button {
-    margin: 36px 0px;
-  }
-}
 header #main-header > div #main-menu {
   grid-area: nav;
-}
-
-#form-content {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". forms .";
-}
-@media (min-width: 1200px) {
-  #form-content {
-    grid-template-columns: auto 1168px auto;
-  }
-}
-#form-content > div {
-  grid-area: forms;
-  padding: 16px 8px;
-}
-#form-content > div form {
-  display: flex;
-  justify-content: space-between;
-  /*===========
-  display: grid;
-  grid-template-columns: repeat (16 1fr);
-  grid-template-areas: 
-  "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
-  =========*/
-}
-#form-content > div form #s1 {
-  color: var(--dblue);
-  background-color: var(--cream);
-  width: 100%;
-  border: none;
-  outline: 0px;
-  border-bottom: 2px solid var(--gold);
-  box-sizing: border-box;
-  grid-area: s1;
-  font-weight: 200;
-  font-size: 0.875rem;
-  line-height: 17px;
-}
-@media (min-width: 768px) {
-  #form-content > div form #s1 {
-    font-size: 1.875rem;
-    line-height: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  #form-content > div form #s1 {
-    font-size: 2.1875rem;
-    line-height: 42px;
-  }
-}
-#form-content > div form #s2 {
-  grid-area: s2;
-  border: none;
-  background-color: var(--cream);
-  color: var(--orange);
-  cursor: pointer;
-  font-size: 2rem;
-  transition: 0.25s;
-  padding: 8px 0px 4px 8px;
-  border-radius: 8px;
-  margin: 4px;
-}
-#form-content > div form #s2:hover {
-  color: var(--gold);
-}
-@media (min-width: 768px) {
-  #form-content > div form #s2 {
-    font-size: 3rem;
-  }
 }
 
 /* =============
@@ -781,6 +725,76 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 }
 footer > div #f3 ul #spacing {
   padding: 0px 16px 0px 0px;
+}
+
+#form-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". forms .";
+}
+@media (min-width: 1200px) {
+  #form-content {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#form-content > div {
+  grid-area: forms;
+  padding: 16px 8px;
+}
+#form-content > div form {
+  display: flex;
+  justify-content: space-between;
+  /*===========
+  display: grid;
+  grid-template-columns: repeat (16 1fr);
+  grid-template-areas: 
+  "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s2";
+  =========*/
+}
+#form-content > div form #s1 {
+  color: var(--dblue);
+  background-color: var(--cream);
+  width: 100%;
+  border: none;
+  outline: 0px;
+  border-bottom: 2px solid var(--gold);
+  box-sizing: border-box;
+  grid-area: s1;
+  font-weight: 200;
+  font-size: 0.875rem;
+  line-height: 17px;
+}
+@media (min-width: 768px) {
+  #form-content > div form #s1 {
+    font-size: 1.875rem;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #form-content > div form #s1 {
+    font-size: 2.1875rem;
+    line-height: 42px;
+  }
+}
+#form-content > div form #s2 {
+  grid-area: s2;
+  border: none;
+  background-color: var(--cream);
+  color: var(--orange);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.25s;
+  padding: 8px 0px 4px 8px;
+  border-radius: 8px;
+  margin: 4px;
+}
+#form-content > div form #s2:hover {
+  color: var(--gold);
+}
+@media (min-width: 768px) {
+  #form-content > div form #s2 {
+    font-size: 3rem;
+  }
 }
 
 /* =============
