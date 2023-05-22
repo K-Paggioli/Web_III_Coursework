@@ -62,6 +62,9 @@ footer{
             }
             ul{
                 li{
+                    border-bottom: 2px solid var(--dblue);
+                    padding-bottom: 16px;
+                    margin-right: 32px;
                     h4{
                         font-weight: 600;
                         font-size: rem-calc(16);
@@ -76,13 +79,18 @@ footer{
                             line-height: 14px;
                             margin-bottom: 8px;
                             margin-top: -12px;
+                            cursor: pointer;
+                            &:hover{
+                                color: var(--cream);
+                            }
+                            transition: .25s;
                     
                         }
                         a:link, a:visited{
                             color: var(--dblue);
                             
                                 &:hover, &:active{
-                                    color: white;
+                                    color: var(--cream);
                                     transition: 0.25s;
                                 }
                             }
@@ -109,6 +117,9 @@ footer{
                         }
                     }
                     
+                }
+                li:last-child{
+                    border: none;
                 }
             }
             a{

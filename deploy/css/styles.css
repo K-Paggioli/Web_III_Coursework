@@ -641,6 +641,11 @@ footer > div #f1 h3 {
   line-height: 24px;
   font-size: 1.25rem;
 }
+footer > div #f1 ul li {
+  border-bottom: 2px solid var(--dblue);
+  padding-bottom: 16px;
+  margin-right: 32px;
+}
 footer > div #f1 ul li h4 {
   font-weight: 600;
   font-size: 1rem;
@@ -655,12 +660,17 @@ footer > div #f1 ul li section address {
   line-height: 14px;
   margin-bottom: 8px;
   margin-top: -12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+footer > div #f1 ul li section address:hover {
+  color: var(--cream);
 }
 footer > div #f1 ul li section a:link, footer > div #f1 ul li section a:visited {
   color: var(--dblue);
 }
 footer > div #f1 ul li section a:link:hover, footer > div #f1 ul li section a:link:active, footer > div #f1 ul li section a:visited:hover, footer > div #f1 ul li section a:visited:active {
-  color: white;
+  color: var(--cream);
   transition: 0.25s;
 }
 footer > div #f1 ul li section i {
@@ -680,6 +690,9 @@ footer > div #f1 ul li section #pin {
 footer > div #f1 ul li section #phone {
   margin-right: 11px;
   cursor: pointer;
+}
+footer > div #f1 ul li:last-child {
+  border: none;
 }
 footer > div #f1 a {
   color: var(--dblue);
@@ -1031,6 +1044,7 @@ footer > div #f3 ul #spacing {
   font-weight: 600;
   line-height: 30px;
   font-size: 1.6875rem;
+  margin-top: 4px;
 }
 #cardb > div section .card-data > div p {
   font-weight: 400;
@@ -1044,133 +1058,133 @@ footer > div #f3 ul #spacing {
   background-color: var(--gold);
   transition: 0.25s;
 }
-#cardb > div #n1 {
+#cardb #n1 {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  #cardb > div #n1 {
+  #cardb #n1 {
     grid-area: n1;
   }
 }
 @media (min-width: 1200px) {
-  #cardb > div #n1 {
+  #cardb #n1 {
     font-size: 2rem;
     line-height: 44px;
   }
 }
 @media (min-width: 768px) {
-  #cardb > div #n2 {
+  #cardb #n2 {
     grid-area: n2;
   }
 }
-#cardb > div #n2 aside {
+#cardb #n2 aside {
   background-image: url("../img/Cards/TuftedUSE.jpg");
   background-size: cover;
   height: 185px;
   background-position: center;
 }
 @media (min-width: 1200px) {
-  #cardb > div #n2 aside {
+  #cardb #n2 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 1440px) {
-  #cardb > div #n2 aside {
+  #cardb #n2 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 768px) {
-  #cardb > div #n3 {
+  #cardb #n3 {
     grid-area: n3;
   }
 }
-#cardb > div #n3 aside {
+#cardb #n3 aside {
   background-image: url("../img/Cards/CrowUSE.jpg");
   background-size: cover;
   height: 185px;
   background-position: top center;
 }
 @media (min-width: 1200px) {
-  #cardb > div #n3 aside {
+  #cardb #n3 aside {
     height: 164px;
     background-position: top center;
   }
 }
 @media (min-width: 1440px) {
-  #cardb > div #n3 aside {
+  #cardb #n3 aside {
     height: 164px;
     background-position: top center;
   }
 }
 @media (min-width: 768px) {
-  #cardb > div #n4 {
+  #cardb #n4 {
     grid-area: n4;
   }
 }
-#cardb > div #n4 aside {
+#cardb #n4 aside {
   background-image: url("../img/Cards/BarnOwlUSE.jpg");
   background-size: cover;
   height: 185px;
   background-position: center;
 }
 @media (min-width: 1200px) {
-  #cardb > div #n4 aside {
+  #cardb #n4 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 1440px) {
-  #cardb > div #n4 aside {
+  #cardb #n4 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 768px) {
-  #cardb > div #n5 {
+  #cardb #n5 {
     grid-area: n5;
   }
 }
-#cardb > div #n5 aside {
+#cardb #n5 aside {
   background-image: url("../img/Cards/LoonUSE.jpg");
   background-size: cover;
   height: 185px;
   background-position: center;
 }
 @media (min-width: 1200px) {
-  #cardb > div #n5 aside {
+  #cardb #n5 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 1440px) {
-  #cardb > div #n5 aside {
+  #cardb #n5 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 768px) {
-  #cardb > div #n6 {
+  #cardb #n6 {
     grid-area: n6;
   }
 }
-#cardb > div #n6 aside {
+#cardb #n6 aside {
   background-image: url("../img/Cards/HawkUSE.jpg");
   background-size: cover;
   height: 185px;
   background-position: center;
 }
 @media (min-width: 1200px) {
-  #cardb > div #n6 aside {
+  #cardb #n6 aside {
     height: 164px;
     background-position: center;
   }
 }
 @media (min-width: 1440px) {
-  #cardb > div #n6 aside {
+  #cardb #n6 aside {
     height: 164px;
     background-position: center;
   }
