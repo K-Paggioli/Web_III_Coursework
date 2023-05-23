@@ -9,7 +9,9 @@
         grid-template-columns:16px auto 16px;
         grid-template-areas: ". cards-below-hero .";
     }
-
+    @include lg{
+        scroll-margin-top: 132px;
+    }
     @include xl{
         grid-template-columns: auto 1168px auto;
     }
@@ -92,7 +94,9 @@
         grid-template-columns: 16px auto 16px;
         grid-template-areas:". news ."
     }
-
+    @include lg{
+        scroll-margin-top: 116px;
+    }
     @include xl{
         grid-template-columns: auto 1168px auto;
     }

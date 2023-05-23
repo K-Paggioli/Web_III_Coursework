@@ -491,10 +491,28 @@ html {
 nav {
   display: none;
 }
-nav li {
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: bottom;
+    margin-top: 27px;
+  }
+}
+nav ul li {
   text-align: right;
 }
-nav li a:link, nav li a:visited {
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 40px;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   transition: 0.25s;
   font-weight: 600;
@@ -502,8 +520,18 @@ nav li a:link, nav li a:visited {
   font-size: 1.125rem;
   color: var(--dblue);
 }
-nav li a:link:hover, nav li a:link:active, nav li a:visited:hover, nav li a:visited:active {
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding-bottom: 2px;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
   color: var(--gold);
+}
+@media (min-width: 1024px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    border-bottom: 1px solid var(--gold);
+  }
 }
 
 /* =============
@@ -533,6 +561,11 @@ header #main-header > div {
   grid-template-columns: 50% auto;
   grid-template-areas: "logo burger" "nav nav";
 }
+@media (min-width: 1024px) {
+  header #main-header > div {
+    grid-template-areas: "logo nav";
+  }
+}
 header #main-header > div #Logo {
   grid-area: logo;
   display: flex;
@@ -554,6 +587,11 @@ header #main-header > div #hamburger-container #burger-button {
 }
 header #main-header > div #hamburger-container #burger-button:hover {
   color: var(--gold);
+}
+@media (min-width: 1024px) {
+  header #main-header > div #hamburger-container {
+    display: none;
+  }
 }
 header #main-header > div #main-menu {
   grid-area: nav;
@@ -743,6 +781,17 @@ footer > div #f3 ul #spacing {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". forms .";
+  scroll-margin-top: 90px;
+}
+@media (min-width: 576px) {
+  #form-content {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  #form-content {
+    scroll-margin-top: 100px;
+  }
 }
 @media (min-width: 1200px) {
   #form-content {
@@ -958,6 +1007,11 @@ footer > div #f3 ul #spacing {
     grid-template-areas: ". cards-below-hero .";
   }
 }
+@media (min-width: 1024px) {
+  #carda {
+    scroll-margin-top: 132px;
+  }
+}
 @media (min-width: 1200px) {
   #carda {
     grid-template-columns: auto 1168px auto;
@@ -1041,6 +1095,11 @@ footer > div #f3 ul #spacing {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". news .";
+  }
+}
+@media (min-width: 1024px) {
+  #cardb {
+    scroll-margin-top: 116px;
   }
 }
 @media (min-width: 1200px) {
@@ -1257,6 +1316,7 @@ background-position: center;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+    scroll-margin-top: 132px;
   }
 }
 @media (min-width: 768px) {

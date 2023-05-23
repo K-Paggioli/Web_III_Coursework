@@ -4,11 +4,12 @@
 
 #gallery{
     scroll-margin-top: 90px;
-    
+
     @include lg{
         display:grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery .";
+        scroll-margin-top: 132px;
     }
 
     ul{

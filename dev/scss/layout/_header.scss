@@ -25,6 +25,10 @@ header{
             "logo burger"
             "nav nav";
 
+            @include lg{
+                grid-template-areas: "logo nav";
+            }
+
             #Logo{
                 grid-area: logo;
                 display:flex;
@@ -48,6 +52,9 @@ header{
                     }
 
  
+            }
+            @include lg{
+                display: none;
             }
             }
             #main-menu{
