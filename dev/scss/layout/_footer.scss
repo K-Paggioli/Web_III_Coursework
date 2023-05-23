@@ -2,16 +2,89 @@
     Footer
 ============= */
 
-/*#orangebar{
+#orangebar{
     background-color: var(--orange);
-}*/
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+
+    @include xl{
+        grid-template-columns: auto 1168px auto;
+    }
+
+    
+
+    #fakefooter{
+        grid-area: footer;
+        color: var(--cream);
+        
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+            "rescue letter"
+            ". follow";
+        }
+
+        @include lg{
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            "rescue letter follow"; 
+            gap: 72px; 
+            align-content: center;   
+        }
+        
+        #rescue{
+            grid-area: rescue;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: rem-calc(20);
+        
+        }
+
+        #letter{
+            grid-area: letter;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: rem-calc(20);
+            display: none;
+
+            @include md{
+                display: block;
+            }
+
+        }
+
+        #follow{
+            grid-area: follow;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: rem-calc(20);
+    display: none;
+        
+
+            @include lg{
+                display: block;
+                text-align: right;
+            }
+            
+
+            
+
+        }
+
+}
+    
+}
 footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     background-color: var(--yellow);
     color: var(--dblue);
-    padding: 16px 0px 18px 0px;
+    padding: 0px 0px 18px 0px;
 
     
 
@@ -54,13 +127,34 @@ footer{
         
         #f1{
             grid-area: f1;
+
+            @include sm{
+                margin-top: -25px;
+            }
+
+            @include md {
+                margin-top: -25px;
+            }
+            @include lg{
+                margin-top: -25px;
+            }
             h3{
                 font-weight: 600;
                 line-height: 24px;
                 font-size: rem-calc(20);
+                @include sm{
+                    display: none;
+                }
+                @include md{
+                    display: none;
+                }
+                @include lg{
+                    display: none;
+                }
 
             }
             ul{
+   
                 li{
                     border-bottom: 2px solid var(--dblue);
                     padding-bottom: 16px;
@@ -134,6 +228,12 @@ footer{
                 line-height: 24px;
                 font-size: rem-calc(20);
                 padding: 0px 0px 12px 0px;
+                @include md{
+                    display: none;
+                }
+                @include lg{
+                    display: none;
+                }
             }
             grid-area: f2;
             form{
@@ -169,18 +269,28 @@ footer{
             }
         }
         #f3{
-            text-align: right;
+            @include lg{
+                text-align: right;
+            }
+            
             h3{
                 font-weight: 600;
                 line-height: 24px;
                 font-size: rem-calc(20);
                 padding: 0px 0px 0px 0px;
+                @include lg{
+                    display: none;
+                }
             }
             grid-area: f3;
             ul{
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-start;
                 font-size: rem-calc(24);
+
+                @include lg{
+                    justify-content: flex-end;
+                }
                 li{
                     cursor: pointer;
                     a:link, a:visited{

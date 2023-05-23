@@ -600,16 +600,75 @@ header #main-header > div #main-menu {
 /* =============
     Footer
 ============= */
-/*#orangebar{
-    background-color: var(--orange);
-}*/
+#orangebar {
+  background-color: var(--orange);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+@media (min-width: 1200px) {
+  #orangebar {
+    grid-template-columns: auto 1168px auto;
+  }
+}
+#orangebar #fakefooter {
+  grid-area: footer;
+  color: var(--cream);
+}
+@media (min-width: 768px) {
+  #orangebar #fakefooter {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "rescue letter" ". follow";
+  }
+}
+@media (min-width: 1024px) {
+  #orangebar #fakefooter {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "rescue letter follow";
+    gap: 72px;
+    align-content: center;
+  }
+}
+#orangebar #fakefooter #rescue {
+  grid-area: rescue;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
+}
+#orangebar #fakefooter #letter {
+  grid-area: letter;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  #orangebar #fakefooter #letter {
+    display: block;
+  }
+}
+#orangebar #fakefooter #follow {
+  grid-area: follow;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #orangebar #fakefooter #follow {
+    display: block;
+    text-align: right;
+  }
+}
+
 footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
   background-color: var(--yellow);
   color: var(--dblue);
-  padding: 16px 0px 18px 0px;
+  padding: 0px 0px 18px 0px;
 }
 @media (min-width: 1200px) {
   footer {
@@ -642,10 +701,40 @@ footer > div {
 footer > div #f1 {
   grid-area: f1;
 }
+@media (min-width: 576px) {
+  footer > div #f1 {
+    margin-top: -25px;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    margin-top: -25px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #f1 {
+    margin-top: -25px;
+  }
+}
 footer > div #f1 h3 {
   font-weight: 600;
   line-height: 24px;
   font-size: 1.25rem;
+}
+@media (min-width: 576px) {
+  footer > div #f1 h3 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 h3 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #f1 h3 {
+    display: none;
+  }
 }
 footer > div #f1 ul li {
   border-bottom: 2px solid var(--dblue);
@@ -717,6 +806,16 @@ footer > div #f2 h3 {
   font-size: 1.25rem;
   padding: 0px 0px 12px 0px;
 }
+@media (min-width: 768px) {
+  footer > div #f2 h3 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #f2 h3 {
+    display: none;
+  }
+}
 footer > div #f2 form {
   display: flex;
   flex-direction: column;
@@ -748,8 +847,12 @@ footer > div #f2 form #button button:hover {
   background-color: var(--dblue);
 }
 footer > div #f3 {
-  text-align: right;
   grid-area: f3;
+}
+@media (min-width: 1024px) {
+  footer > div #f3 {
+    text-align: right;
+  }
 }
 footer > div #f3 h3 {
   font-weight: 600;
@@ -757,10 +860,20 @@ footer > div #f3 h3 {
   font-size: 1.25rem;
   padding: 0px 0px 0px 0px;
 }
+@media (min-width: 1024px) {
+  footer > div #f3 h3 {
+    display: none;
+  }
+}
 footer > div #f3 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  footer > div #f3 ul {
+    justify-content: flex-end;
+  }
 }
 footer > div #f3 ul li {
   cursor: pointer;
