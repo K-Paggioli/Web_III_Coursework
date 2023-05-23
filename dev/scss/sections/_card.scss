@@ -2,6 +2,7 @@
     Card 
 ============= */
 #carda{
+    scroll-margin-top: 90px;
     text-align: left; 
     @include md{
         display: grid;
@@ -84,6 +85,7 @@
 ============= */
 
 #cardb{
+    scroll-margin-top: 90px;
     background-color: none;
     @include md{
         display: grid;

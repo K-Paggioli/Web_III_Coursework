@@ -480,13 +480,14 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 .show-menu {
   display: block !important;
 }
 
-nav {
-  display: none;
-}
 nav li {
   text-align: right;
 }
@@ -507,17 +508,16 @@ nav li a:link:hover, nav li a:link:active, nav li a:visited:hover, nav li a:visi
 ============= */
 header {
   background-color: var(--cream);
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 3px rgba(0, 35, 50, 0.25);
 }
 header #main-header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
-  position: sticky;
-  box-shadow: 0px 4px 10px rgba(0, 35, 50, 0.25);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 35, 50, 0.25);
+  background-color: var(--cream);
 }
 header #main-header > div {
   grid-area: main;
@@ -736,6 +736,7 @@ footer > div #f3 ul #spacing {
 }
 
 #form-content {
+  padding-top: 66px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". forms .";
@@ -944,6 +945,7 @@ footer > div #f3 ul #spacing {
     Card 
 ============= */
 #carda {
+  scroll-margin-top: 90px;
   text-align: left;
 }
 @media (min-width: 768px) {
@@ -1028,6 +1030,7 @@ footer > div #f3 ul #spacing {
     Card 2
 ============= */
 #cardb {
+  scroll-margin-top: 90px;
   background-color: none;
 }
 @media (min-width: 768px) {
@@ -1243,6 +1246,9 @@ background-position: center;
 /* =============
     Gallery
 ============= */
+#gallery {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 1024px) {
   #gallery {
     display: grid;
