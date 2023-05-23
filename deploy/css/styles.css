@@ -488,6 +488,9 @@ html {
   display: block !important;
 }
 
+nav {
+  display: none;
+}
 nav li {
   text-align: right;
 }
