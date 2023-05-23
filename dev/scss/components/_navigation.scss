@@ -1,15 +1,18 @@
 /* =============
     Navigation
 ============= */
-
+.show-menu{
+    display: block !important;
+}
 nav{
-display: none;
-    
+    display: none;
     li{
+        text-align: right;
         a:link, a:visited{
             display:inline-block;
             transition: 0.25s;
             font-weight:600;
+            padding: 16px 0px 16px;
             font-size: rem-calc(18);
             color: var(--dblue);
 

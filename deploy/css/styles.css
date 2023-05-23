@@ -480,13 +480,21 @@ textarea {
 /* =============
     Navigation
 ============= */
+.show-menu {
+  display: block !important;
+}
+
 nav {
   display: none;
+}
+nav li {
+  text-align: right;
 }
 nav li a:link, nav li a:visited {
   display: inline-block;
   transition: 0.25s;
   font-weight: 600;
+  padding: 16px 0px 16px;
   font-size: 1.125rem;
   color: var(--dblue);
 }
