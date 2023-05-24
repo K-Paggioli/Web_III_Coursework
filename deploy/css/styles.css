@@ -545,6 +545,7 @@ header #main-header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   position: fixed;
+  order: 10000000000;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(0, 35, 50, 0.25);
@@ -1264,10 +1265,72 @@ footer > div #f3 ul #spacing {
   line-height: 20px;
   font-size: 1rem;
 }
-#cardb > div section .card-data > div a:link, #cardb > div section .card-data > div a:visited {
+#cardb > div section .card-data > div #button-position {
+  position: relative;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-code {
+  position: absolute;
+  top: 300px;
+  bottom: 16px;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-code a:link, #cardb > div section .card-data > div #button-position #button-code a:visited {
   color: white;
 }
-#cardb > div section .card-data > div a:link:hover, #cardb > div section .card-data > div a:link:active, #cardb > div section .card-data > div a:visited:hover, #cardb > div section .card-data > div a:visited:active {
+#cardb > div section .card-data > div #button-position #button-code a:link:hover, #cardb > div section .card-data > div #button-position #button-code a:link:active, #cardb > div section .card-data > div #button-position #button-code a:visited:hover, #cardb > div section .card-data > div #button-position #button-code a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
+}
+#cardb > div section .card-data > div #button-position #button-postion-2 {
+  position: absolute;
+  top: 100px;
+  bottom: 16px;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-postion-2 a:link, #cardb > div section .card-data > div #button-position #button-postion-2 a:visited {
+  color: white;
+}
+#cardb > div section .card-data > div #button-position #button-postion-2 a:link:hover, #cardb > div section .card-data > div #button-position #button-postion-2 a:link:active, #cardb > div section .card-data > div #button-position #button-postion-2 a:visited:hover, #cardb > div section .card-data > div #button-position #button-postion-2 a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
+}
+#cardb > div section .card-data > div #button-position #button-postion-3 {
+  position: absolute;
+  top: 100px;
+  bottom: 16px;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-postion-3 a:link, #cardb > div section .card-data > div #button-position #button-postion-3 a:visited {
+  color: white;
+}
+#cardb > div section .card-data > div #button-position #button-postion-3 a:link:hover, #cardb > div section .card-data > div #button-position #button-postion-3 a:link:active, #cardb > div section .card-data > div #button-position #button-postion-3 a:visited:hover, #cardb > div section .card-data > div #button-position #button-postion-3 a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
+}
+#cardb > div section .card-data > div #button-position #button-postion-4 {
+  position: absolute;
+  top: 100px;
+  bottom: 16px;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-postion-4 a:link, #cardb > div section .card-data > div #button-position #button-postion-4 a:visited {
+  color: white;
+}
+#cardb > div section .card-data > div #button-position #button-postion-4 a:link:hover, #cardb > div section .card-data > div #button-position #button-postion-4 a:link:active, #cardb > div section .card-data > div #button-position #button-postion-4 a:visited:hover, #cardb > div section .card-data > div #button-position #button-postion-4 a:visited:active {
+  background-color: var(--gold);
+  transition: 0.25s;
+}
+#cardb > div section .card-data > div #button-position #button-postion-5 {
+  position: absolute;
+  top: 100px;
+  bottom: 16px;
+  order: -100000;
+}
+#cardb > div section .card-data > div #button-position #button-postion-5 a:link, #cardb > div section .card-data > div #button-position #button-postion-5 a:visited {
+  color: white;
+}
+#cardb > div section .card-data > div #button-position #button-postion-5 a:link:hover, #cardb > div section .card-data > div #button-position #button-postion-5 a:link:active, #cardb > div section .card-data > div #button-position #button-postion-5 a:visited:hover, #cardb > div section .card-data > div #button-position #button-postion-5 a:visited:active {
   background-color: var(--gold);
   transition: 0.25s;
 }
