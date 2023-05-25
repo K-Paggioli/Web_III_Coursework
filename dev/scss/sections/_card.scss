@@ -134,13 +134,9 @@
                 background-color: var(--sage);
                 color: var(--dblue);
                 box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
-                padding: 16px 0;
-                box-sizing: border-box;
-                
+                padding: 16px 0; 
                 >div{
-                    display: flex;
-                    flex-direction: column;
-                    box-sizing: border-box;
+                    position: relative;  
                  
                     grid-area: cardb;
                         h2{
@@ -161,9 +157,13 @@
                         }
 
                             #button-code{
- 
+                            position: relative;
+
+                            
 
                                 a:link, a:visited{
+                                    position: relative;
+                                    top: 50px;
                                     color: white;
                                 
                                     

@@ -545,7 +545,7 @@ header #main-header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
   position: fixed;
-  order: 10000000000;
+  z-index: 10000000000;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(0, 35, 50, 0.25);
@@ -1250,12 +1250,9 @@ footer > div #f3 ul #spacing {
   color: var(--dblue);
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
   padding: 16px 0;
-  box-sizing: border-box;
 }
 #cardb > div section .card-data > div {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  position: relative;
   grid-area: cardb;
 }
 #cardb > div section .card-data > div h2 {
@@ -1269,7 +1266,12 @@ footer > div #f3 ul #spacing {
   line-height: 20px;
   font-size: 1rem;
 }
+#cardb > div section .card-data > div #button-code {
+  position: relative;
+}
 #cardb > div section .card-data > div #button-code a:link, #cardb > div section .card-data > div #button-code a:visited {
+  position: relative;
+  top: 50px;
   color: white;
 }
 #cardb > div section .card-data > div #button-code a:link:hover, #cardb > div section .card-data > div #button-code a:link:active, #cardb > div section .card-data > div #button-code a:visited:hover, #cardb > div section .card-data > div #button-code a:visited:active {
