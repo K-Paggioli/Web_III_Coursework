@@ -135,9 +135,8 @@
                 color: var(--dblue);
                 box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
                 padding: 16px 0; 
-                position: relative;
+
                 >div{
-                    position: relative;  
                  
                     grid-area: cardb;
                         h2{
@@ -154,17 +153,15 @@
                             font-weight:400;
                             line-height: 20px;
                             font-size: rem-calc(16);
+                            padding-bottom: 16px;
 
     
 
                         }
                             #button-code{
-                                padding-bottom: 50px;
-                            
+                            padding-bottom: 16px;
 
                                 a:link, a:visited{
-                                    position: absolute;
-                                    top: 184px;
 
                                     color: white;
                                 

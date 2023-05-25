@@ -1250,10 +1250,8 @@ footer > div #f3 ul #spacing {
   color: var(--dblue);
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.2968);
   padding: 16px 0;
-  position: relative;
 }
 #cardb > div section .card-data > div {
-  position: relative;
   grid-area: cardb;
 }
 #cardb > div section .card-data > div h2 {
@@ -1266,13 +1264,12 @@ footer > div #f3 ul #spacing {
   font-weight: 400;
   line-height: 20px;
   font-size: 1rem;
+  padding-bottom: 16px;
 }
 #cardb > div section .card-data > div #button-code {
-  padding-bottom: 50px;
+  padding-bottom: 16px;
 }
 #cardb > div section .card-data > div #button-code a:link, #cardb > div section .card-data > div #button-code a:visited {
-  position: absolute;
-  top: 184px;
   color: white;
 }
 #cardb > div section .card-data > div #button-code a:link:hover, #cardb > div section .card-data > div #button-code a:link:active, #cardb > div section .card-data > div #button-code a:visited:hover, #cardb > div section .card-data > div #button-code a:visited:active {
