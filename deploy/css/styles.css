@@ -1266,26 +1266,13 @@ footer > div #f3 ul #spacing {
   font-weight: 400;
   line-height: 20px;
   font-size: 1rem;
-  padding-bottom: 50px;
-}
-#cardb > div section .card-data > div #tufted {
-  font-weight: 400;
-  line-height: 20px;
-  font-size: 1rem;
-  padding-bottom: 50px;
-}
-#cardb > div section .card-data > div #crow {
-  font-weight: 400;
-  line-height: 20px;
-  font-size: 1rem;
-  padding-bottom: 80px;
 }
 #cardb > div section .card-data > div #button-code {
-  position: absolute;
-  top: 184px;
-  bottom: 16px;
+  padding-bottom: 50px;
 }
 #cardb > div section .card-data > div #button-code a:link, #cardb > div section .card-data > div #button-code a:visited {
+  position: absolute;
+  top: 184px;
   color: white;
 }
 #cardb > div section .card-data > div #button-code a:link:hover, #cardb > div section .card-data > div #button-code a:link:active, #cardb > div section .card-data > div #button-code a:visited:hover, #cardb > div section .card-data > div #button-code a:visited:active {
