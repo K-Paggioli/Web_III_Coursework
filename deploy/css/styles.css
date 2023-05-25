@@ -578,7 +578,7 @@ header #main-header > div #hamburger-container {
   align-items: center;
   justify-content: right;
 }
-header #main-header > div #hamburger-container #burger-button {
+header #main-header > div #hamburger-container #burger-btn {
   border: none;
   font-size: 2.5rem;
   background-color: var(--cream);
@@ -586,7 +586,7 @@ header #main-header > div #hamburger-container #burger-button {
   cursor: pointer;
   transition: 0.25s;
 }
-header #main-header > div #hamburger-container #burger-button:hover {
+header #main-header > div #hamburger-container #burger-btn:hover {
   color: var(--gold);
 }
 @media (min-width: 1024px) {
